@@ -1,0 +1,11 @@
+
+
+{'eval_loss': 6.0627946853637695, 'eval_bleu': 1.6464112327428742, 'eval_chrf': 33.61105617155361, 'eval_runtime': 15.4436, 'eval_samples_per_second': 64.817, 'eval_steps_per_second': 1.036}
+{'loss': 1.8064, 'learning_rate': 5.380116959064328e-06, 'epoch': 2.19}
+{'train_runtime': 58.3989, 'train_samples_per_second': 374.596, 'train_steps_per_second': 11.713, 'train_loss': 1.6260582327145583, 'epoch': 3.0}
+{'eval_loss': 1.0609562397003174, 'eval_bleu': 10.571070857151538, 'eval_chrf': 51.56951816400006, 'eval_runtime': 14.3094, 'eval_samples_per_second': 69.954, 'eval_steps_per_second': 1.118, 'epoch': 3.0}
+tensor([[118, 152, 108, 103, 104, 108,   1]], device='cuda:0')
+['▁he', '▁bofrimize', 's', '▁', 'u', 's']
+tensor([[  0,  43, 118, 152, 108, 103, 104, 108,   1]], device='cuda:0')
+he bofrimizes us
+[{'translation_text': 'translate nglish to rench he bofrimizesc'}]
