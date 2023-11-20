@@ -3,7 +3,7 @@ from pandas import DataFrame
 from tokenizers import Tokenizer, models, pre_tokenizers
 from tokenizers import trainers, processors, decoders
 from transformers import PreTrainedTokenizerFast
-from constants import ALGORITHM, VOCAB_SIZE, BPE_TOKENIZER_FILE, UNIGRAM_TOKENIZER_FILE, WORDPIECE_TOKENIZER_FILE
+from constants import ALGORITHM, VOCAB_SIZE, BPE_DROPOUT_RATE, BPE_TOKENIZER_FILE, UNIGRAM_TOKENIZER_FILE, WORDPIECE_TOKENIZER_FILE, BPE_DROPOUT_TOKENIZER_FILE
 import os
 
 def enumerate_lines(filename):
@@ -44,32 +44,7 @@ def create_hf_dataset(data_dir, src, tgt):
 def parallel_data_iterator(dataset, src, tgt, split="train"):
     return list(map(lambda x: (x[src], x[tgt]), dataset[split]['translation']))
 
-def train_tokenizer(data_dir, src, tgt, outfile, vocab_size=VOCAB_SIZE):
-    def get_training_corpus():
-        for i in range(0, len(dataset['train'])):
-            yield dataset['train'][i]["translation"][src]
-            yield dataset['train'][i]["translation"][tgt]
-
-    dataset = create_hf_dataset(data_dir, src, tgt)
-    tokenizer = Tokenizer(models.BPE())
-    tokenizer.pre_tokenizer = pre_tokenizers.ByteLevel(add_prefix_space=False)
-    special_tokens = ["<s>", "<pad>", "</s>", "<unk>", "<mask>"]
-    trainer = trainers.BpeTrainer(vocab_size=vocab_size, special_tokens=special_tokens)
-    tokenizer.train_from_iterator(get_training_corpus(), trainer=trainer)
-    tokenizer.post_processor = processors.ByteLevel(trim_offsets=False)
-    tokenizer.decoder = decoders.ByteLevel()
-    wrapped_tokenizer = PreTrainedTokenizerFast(
-        tokenizer_object=tokenizer,
-        bos_token="<s>",
-        eos_token="</s>",
-        unk_token="<unk>",
-        mask_token="<mask>",
-        pad_token="<pad>"
-    )
-    wrapped_tokenizer.save_pretrained(outfile)
-    return wrapped_tokenizer
-
-def train_tokenizer_with_algo(data_dir, src, tgt, algorithm=ALGORITHM):
+def train_tokenizer_with_algo(data_dir, src, tgt):
     def get_training_corpus():
         for i in range(0, len(dataset['train'])):
             yield dataset['train'][i]["translation"][src]
@@ -78,11 +53,11 @@ def train_tokenizer_with_algo(data_dir, src, tgt, algorithm=ALGORITHM):
     dataset = create_hf_dataset(data_dir, src, tgt)
     special_tokens = ["<s>", "<pad>", "</s>", "<unk>", "<mask>"]
 
-    if algorithm == "BPE":
+    if ALGORITHM == "BPE":
         print("####Training BPE Tokenizer####")
         tokenizer = Tokenizer(models.BPE())
-        tokenizer.pre_tokenizer = pre_tokenizers.Whitespace()
-        trainer = trainers.BpeTrainer(vocab_size=500, special_tokens=special_tokens)
+        tokenizer.pre_tokenizer = pre_tokenizers.ByteLevel(add_prefix_space=False)
+        trainer = trainers.BpeTrainer(vocab_size=VOCAB_SIZE, special_tokens=special_tokens)
         tokenizer.train_from_iterator(get_training_corpus(), trainer=trainer)
         tokenizer.post_processor = processors.ByteLevel(trim_offsets=False)
         tokenizer.decoder = decoders.ByteLevel()
@@ -98,11 +73,11 @@ def train_tokenizer_with_algo(data_dir, src, tgt, algorithm=ALGORITHM):
             os.makedirs(BPE_TOKENIZER_FILE)
         wrapped_tokenizer.save_pretrained(BPE_TOKENIZER_FILE)
     
-    elif algorithm == "UNIGRAM":
+    elif ALGORITHM == "UNIGRAM":
         print("####Training Unigram Tokenizer####")
         tokenizer = Tokenizer(models.Unigram())
-        tokenizer.pre_tokenizer = pre_tokenizers.Whitespace()
-        trainer = trainers.UnigramTrainer(vocab_size=500, special_tokens=special_tokens)
+        tokenizer.pre_tokenizer = pre_tokenizers.ByteLevel(add_prefix_space=False)
+        trainer = trainers.UnigramTrainer(vocab_size=VOCAB_SIZE, special_tokens=special_tokens)
         tokenizer.train_from_iterator(get_training_corpus(), trainer=trainer)
         tokenizer.post_processor = processors.ByteLevel(trim_offsets=False)
         tokenizer.decoder = decoders.ByteLevel()
@@ -118,14 +93,14 @@ def train_tokenizer_with_algo(data_dir, src, tgt, algorithm=ALGORITHM):
             os.makedirs(UNIGRAM_TOKENIZER_FILE)
         wrapped_tokenizer.save_pretrained(UNIGRAM_TOKENIZER_FILE)
     
-    else:
+    elif ALGORITHM == "WORDPIECE":
         print("####Training Wordpiece Tokenizer####")
         tokenizer = Tokenizer(models.WordPiece())
-        tokenizer.pre_tokenizer = pre_tokenizers.Whitespace()
-        trainer = trainers.WordPieceTrainer(vocab_size=500, special_tokens=special_tokens)
+        tokenizer.pre_tokenizer = pre_tokenizers.ByteLevel(add_prefix_space=False)
+        trainer = trainers.WordPieceTrainer(vocab_size=VOCAB_SIZE, special_tokens=special_tokens)
         tokenizer.train_from_iterator(get_training_corpus(), trainer=trainer)
         tokenizer.post_processor = processors.ByteLevel(trim_offsets=False)
-        tokenizer.decoder = decoders.ByteLevel()
+        tokenizer.decoder = decoders.WordPiece()
         wrapped_tokenizer = PreTrainedTokenizerFast(
             tokenizer_object=tokenizer,
             bos_token="<s>",
@@ -137,6 +112,26 @@ def train_tokenizer_with_algo(data_dir, src, tgt, algorithm=ALGORITHM):
         if not os.path.exists(WORDPIECE_TOKENIZER_FILE):
             os.makedirs(WORDPIECE_TOKENIZER_FILE)
         wrapped_tokenizer.save_pretrained(WORDPIECE_TOKENIZER_FILE)
+    
+    else:
+        print("####Training BPE Dropout Tokenizer####")
+        tokenizer = Tokenizer(models.BPE(dropout=BPE_DROPOUT_RATE))
+        tokenizer.pre_tokenizer = pre_tokenizers.ByteLevel(add_prefix_space=False)
+        trainer = trainers.BpeTrainer(vocab_size=VOCAB_SIZE, special_tokens=special_tokens)
+        tokenizer.train_from_iterator(get_training_corpus(), trainer=trainer)
+        tokenizer.post_processor = processors.ByteLevel(trim_offsets=False)
+        tokenizer.decoder = decoders.ByteLevel()
+        wrapped_tokenizer = PreTrainedTokenizerFast(
+            tokenizer_object=tokenizer,
+            bos_token="<s>",
+            eos_token="</s>",
+            unk_token="<unk>",
+            mask_token="<mask>",
+            pad_token="<pad>"
+        )
+        if not os.path.exists(BPE_DROPOUT_TOKENIZER_FILE):
+            os.makedirs(BPE_DROPOUT_TOKENIZER_FILE)
+        wrapped_tokenizer.save_pretrained(BPE_DROPOUT_TOKENIZER_FILE)
 
     return wrapped_tokenizer
 

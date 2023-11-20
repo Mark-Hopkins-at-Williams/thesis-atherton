@@ -5,14 +5,14 @@ from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import DataLoader
 from transformers import PreTrainedTokenizerFast
 import os
-import evaluate as metrics_import
 from model import Seq2SeqTransformer
 from constants import DEVICE, SRC_LANGUAGE, TGT_LANGUAGE, DATA_DIR
 from constants import EMB_SIZE, NHEAD, FFN_HID_DIM, BATCH_SIZE
 from constants import NUM_ENCODER_LAYERS, NUM_DECODER_LAYERS, NUM_EPOCHS
-from constants import BPE_MODEL_FILE, UNIGRAM_MODEL_FILE, WORDPIECE_MODEL_FILE
+from constants import BPE_MODEL_FILE, UNIGRAM_MODEL_FILE, WORDPIECE_MODEL_FILE, BPE_DROPOUT_MODEL_FILE
 from constants import ALGORITHM
-from paralleldata import train_tokenizer, train_tokenizer_with_algo
+from constants import METRIC_CHRF, METRIC_BLEU
+from paralleldata import train_tokenizer_with_algo
 from paralleldata import create_hf_dataset, parallel_data_iterator
 from trainutil import generate_square_subsequent_mask, create_mask
 from trainutil import sequential_transforms, tensor_transform
@@ -21,8 +21,7 @@ from trainutil import sequential_transforms, tensor_transform
 
 # Creates the tokenizer for source and target.
 print("####Training tokenizer####")
-#tokenizer = train_tokenizer(DATA_DIR, SRC_LANGUAGE, TGT_LANGUAGE, TOKENIZER_FILE)
-tokenizer = train_tokenizer_with_algo(DATA_DIR, SRC_LANGUAGE, TGT_LANGUAGE, ALGORITHM)
+tokenizer = train_tokenizer_with_algo(DATA_DIR, SRC_LANGUAGE, TGT_LANGUAGE)
 token_transform = {}
 token_transform[SRC_LANGUAGE] = tokenizer
 token_transform[TGT_LANGUAGE] = tokenizer
@@ -136,15 +135,15 @@ def translate(model: torch.nn.Module, src_sentence: str):
         model,  src, src_mask, max_len=num_tokens + 5, start_symbol=tokenizer.bos_token_id).flatten()
     return token_transform[TGT_LANGUAGE].decode(tgt_tokens).replace("<s>", "").replace("</s>", "")
 
-def evaluate_bleu_chrf(model, dataset):
-    METRIC_BLEU = metrics_import.load("bleu")
-    METRIC_CHRF = metrics_import.load("chrf")
+def evaluate_bleu_chrf(model, dataset):    
     translations = []
     targets = []
     test_dataset = dataset["test"]
     for word_idx in range(test_dataset.num_rows):
         targets.append([test_dataset[word_idx]["translation"][TGT_LANGUAGE]])
-        translations.append(translate(model, test_dataset[word_idx]["translation"][SRC_LANGUAGE]))
+        source = test_dataset[word_idx]["translation"][SRC_LANGUAGE]
+        translations.append(translate(model, source))
+        print(f"Target: {targets[-1][0]}, Source: {source}, Translation: {translations[-1]}")
     print("CHRF score: ", METRIC_CHRF.compute(predictions=translations, references=targets))
     print("BLEU score: ", METRIC_BLEU.compute(predictions=translations, references=targets))
 
@@ -155,17 +154,17 @@ for epoch in range(1, NUM_EPOCHS+1):
     end_time = timer()
     val_loss = evaluate(transformer)
     print((f"Epoch: {epoch}, Train loss: {train_loss:.3f}, Val loss: {val_loss:.3f}, "f"Epoch time = {(end_time - start_time):.3f}s"))
-    # print(translate(transformer, dataset["validation"][0]['translation'][SRC_LANGUAGE]))
-    # print(dataset["validation"][0]['translation'][TGT_LANGUAGE])
-    evaluate_bleu_chrf(transformer, dataset)
+    if epoch == NUM_EPOCHS: evaluate_bleu_chrf(transformer, dataset)
 
 if ALGORITHM == "BPE": 
     model_save_location = BPE_MODEL_FILE
 elif ALGORITHM == "UNIGRAM": 
     model_save_location = UNIGRAM_MODEL_FILE
-else: 
+elif ALGORITHM == "WORDPIECE": 
     model_save_location = WORDPIECE_MODEL_FILE
+else:
+    model_save_location = BPE_DROPOUT_MODEL_FILE
 
 # if not os.path.exists(model_save_location):
 #     os.makedirs(model_save_location)
-torch.save(transformer, model_save_location)
+#torch.save(transformer, model_save_location)
