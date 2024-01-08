@@ -9,19 +9,19 @@ from model import Seq2SeqTransformer
 from constants import DEVICE, SRC_LANGUAGE, TGT_LANGUAGE, DATA_DIR
 from constants import EMB_SIZE, NHEAD, FFN_HID_DIM, BATCH_SIZE
 from constants import NUM_ENCODER_LAYERS, NUM_DECODER_LAYERS, NUM_EPOCHS
-from constants import BPE_MODEL_FILE, UNIGRAM_MODEL_FILE, WORDPIECE_MODEL_FILE, BPE_DROPOUT_MODEL_FILE
 from constants import ALGORITHM
 from constants import METRIC_CHRF, METRIC_BLEU
 from paralleldata import train_tokenizer_with_algo
 from paralleldata import create_hf_dataset, parallel_data_iterator
 from trainutil import generate_square_subsequent_mask, create_mask
 from trainutil import sequential_transforms, tensor_transform
+from tqdm import tqdm
 
-#torch.manual_seed(0)
+torch.manual_seed(0)
 
 # Creates the tokenizer for source and target.
 print("####Training tokenizer####")
-tokenizer = train_tokenizer_with_algo(DATA_DIR, SRC_LANGUAGE, TGT_LANGUAGE)
+tokenizer = train_tokenizer_with_algo()
 token_transform = {}
 token_transform[SRC_LANGUAGE] = tokenizer
 token_transform[TGT_LANGUAGE] = tokenizer
@@ -32,11 +32,15 @@ print("####Tokenizer trained####")
 # Loads in the (Huggingface-style) dataset
 print("####Loading dataset####")
 dataset = create_hf_dataset(DATA_DIR, SRC_LANGUAGE, TGT_LANGUAGE)
+print(dataset)
+print(dataset["train"][0])
+print(dataset["validation"][0])
+print(dataset["test"][0])
 print("####Dataset loaded####")
 
 # Initializes the transformer model.
 transformer = Seq2SeqTransformer(NUM_ENCODER_LAYERS, NUM_DECODER_LAYERS, EMB_SIZE,
-                                 NHEAD, SRC_VOCAB_SIZE, TGT_VOCAB_SIZE, FFN_HID_DIM)
+                                NHEAD, SRC_VOCAB_SIZE, TGT_VOCAB_SIZE, FFN_HID_DIM)
 for p in transformer.parameters():
     if p.dim() > 1:
         nn.init.xavier_uniform_(p)
@@ -51,8 +55,8 @@ print("####Transforming text####")
 text_transform = {}
 for ln in [SRC_LANGUAGE, TGT_LANGUAGE]:
     text_transform[ln] = sequential_transforms(token_transform[ln], #Tokenization
-                                               lambda x: x['input_ids'], #Numericalization
-                                               lambda tok_ids: tensor_transform(tok_ids, tokenizer.bos_token_id, tokenizer.eos_token_id)) # Add BOS/EOS and create tensor
+                                            lambda x: x['input_ids'], #Numericalization
+                                            lambda tok_ids: tensor_transform(tok_ids, tokenizer.bos_token_id, tokenizer.eos_token_id)) # Add BOS/EOS and create tensor
 print("####Text transformed####")
 
 def collate_fn(batch):
@@ -66,12 +70,12 @@ def collate_fn(batch):
     return src_batch, tgt_batch
 
 
-def train_epoch(model, optimizer):
+def train_epoch(model, optimizer, src_language=SRC_LANGUAGE, tgt_langauge=TGT_LANGUAGE, batch_size=BATCH_SIZE):
     """Trains the model for a single epoch."""
     model.train()
     losses = 0
-    train_iter = parallel_data_iterator(dataset, SRC_LANGUAGE, TGT_LANGUAGE, split="train")
-    train_dataloader = DataLoader(train_iter, batch_size=BATCH_SIZE, collate_fn=collate_fn)
+    train_iter = parallel_data_iterator(dataset, src_language, tgt_langauge, split="train")
+    train_dataloader = DataLoader(train_iter, batch_size=batch_size, collate_fn=collate_fn)
     for src, tgt in train_dataloader:
         src = src.to(DEVICE)
         tgt = tgt.to(DEVICE)
@@ -87,12 +91,12 @@ def train_epoch(model, optimizer):
     return losses / len(list(train_dataloader))
 
 
-def evaluate(model):
+def evaluate(model, src_language=SRC_LANGUAGE, tgt_langauge=TGT_LANGUAGE, batch_size=BATCH_SIZE):
     """Evaluates the quality of the current model on the validation set."""
     model.eval()
     losses = 0
-    val_iter = parallel_data_iterator(dataset, SRC_LANGUAGE, TGT_LANGUAGE, split="validation")
-    val_dataloader = DataLoader(val_iter, batch_size=BATCH_SIZE, collate_fn=collate_fn)
+    val_iter = parallel_data_iterator(dataset, src_language, tgt_langauge, split="validation")
+    val_dataloader = DataLoader(val_iter, batch_size=batch_size, collate_fn=collate_fn)
     for src, tgt in val_dataloader:
         src = src.to(DEVICE)
         tgt = tgt.to(DEVICE)
@@ -105,7 +109,7 @@ def evaluate(model):
     return losses / len(list(val_dataloader))
 
 
-def translate(model: torch.nn.Module, src_sentence: str):
+def translate(model: torch.nn.Module, src_sentence: str, src_language=SRC_LANGUAGE, tgt_language=TGT_LANGUAGE):
     """Translates source sentence into target language."""
     def greedy_decode(model, src, src_mask, max_len, start_symbol):
         src = src.to(DEVICE)
@@ -128,43 +132,51 @@ def translate(model: torch.nn.Module, src_sentence: str):
         return ys
 
     model.eval()
-    src = text_transform[SRC_LANGUAGE](src_sentence).view(-1, 1)
+    src = text_transform[src_language](src_sentence).view(-1, 1)
     num_tokens = src.shape[0]
     src_mask = (torch.zeros(num_tokens, num_tokens)).type(torch.bool)
     tgt_tokens = greedy_decode(
         model,  src, src_mask, max_len=num_tokens + 5, start_symbol=tokenizer.bos_token_id).flatten()
-    return token_transform[TGT_LANGUAGE].decode(tgt_tokens).replace("<s>", "").replace("</s>", "")
+    return token_transform[tgt_language].decode(tgt_tokens).replace("<s>", "").replace("</s>", "")
 
-def evaluate_bleu_chrf(model, dataset):    
+def evaluate_bleu_chrf(model, dataset, verbose=False, src=SRC_LANGUAGE, tgt=TGT_LANGUAGE):    
     translations = []
     targets = []
     test_dataset = dataset["test"]
-    for word_idx in range(test_dataset.num_rows):
-        targets.append([test_dataset[word_idx]["translation"][TGT_LANGUAGE]])
-        source = test_dataset[word_idx]["translation"][SRC_LANGUAGE]
+    for word_idx in tqdm(range(test_dataset.num_rows)):
+        targets.append([test_dataset[word_idx]["translation"][tgt]])
+        source = test_dataset[word_idx]["translation"][src]
         translations.append(translate(model, source))
-        print(f"Target: {targets[-1][0]}, Source: {source}, Translation: {translations[-1]}")
-    print("CHRF score: ", METRIC_CHRF.compute(predictions=translations, references=targets))
-    print("BLEU score: ", METRIC_BLEU.compute(predictions=translations, references=targets))
+        if verbose and word_idx < 200: print(f"Target: {targets[-1][0]}, Source: {source}, Translation: {translations[-1]}")
+    chrf_score = METRIC_CHRF.compute(predictions=translations, references=targets)
+    bleu_score = METRIC_BLEU.compute(predictions=translations, references=targets)
+    print(f"CHRF score: {chrf_score}")
+    print(f"BLEU score: {bleu_score}")
+    return chrf_score, bleu_score
 
-print("####Starting training loop####")
-for epoch in range(1, NUM_EPOCHS+1):
-    start_time = timer()
-    train_loss = train_epoch(transformer, optimizer)
-    end_time = timer()
-    val_loss = evaluate(transformer)
-    print((f"Epoch: {epoch}, Train loss: {train_loss:.3f}, Val loss: {val_loss:.3f}, "f"Epoch time = {(end_time - start_time):.3f}s"))
-    if epoch == NUM_EPOCHS: evaluate_bleu_chrf(transformer, dataset)
+def train_model(evalute_metrics = False, verbose = True):
+    print("####Starting training loop####")
+    #add patience
+    val_loss = float('inf')
+    for epoch in range(1, NUM_EPOCHS+1):
+        start_time = timer()
+        train_loss = train_epoch(transformer, optimizer)
+        end_time = timer()
+        val_loss = evaluate(transformer)
+        if verbose and epoch < 200: print((f"Epoch: {epoch}, Train loss: {train_loss:.3f}, Val loss: {val_loss:.3f}, "f"Epoch time = {(end_time - start_time):.3f}s"))
+    if evalute_metrics: evaluate_bleu_chrf(transformer, dataset)
+    return NUM_EPOCHS, val_loss
 
-if ALGORITHM == "BPE": 
-    model_save_location = BPE_MODEL_FILE
-elif ALGORITHM == "UNIGRAM": 
-    model_save_location = UNIGRAM_MODEL_FILE
-elif ALGORITHM == "WORDPIECE": 
-    model_save_location = WORDPIECE_MODEL_FILE
-else:
-    model_save_location = BPE_DROPOUT_MODEL_FILE
+def save_model_cpt(src=SRC_LANGUAGE, tgt=TGT_LANGUAGE, alg=ALGORITHM):
+    model_save_location = f"models/{src}_to_{tgt}/{alg}/cpt.pt"
 
-# if not os.path.exists(model_save_location):
-#     os.makedirs(model_save_location)
-#torch.save(transformer, model_save_location)
+    if not os.path.exists(model_save_location[:-6]):
+        os.makedirs(model_save_location[:-6])
+    torch.save(transformer, model_save_location)
+
+    loaded_model = torch.load(model_save_location)
+    loaded_model.eval()
+    evaluate_bleu_chrf(loaded_model, dataset, verbose=True)
+
+train_model()
+save_model_cpt()
