@@ -1,0 +1,1802 @@
+
+
+
+
+
+
+No config file specified. Using the default config.
+Tokenizer(vocabulary_size=500, model=BertWordPiece, unk_token=[UNK], sep_token=[SEP], cls_token=[CLS], pad_token=[PAD], mask_token=[MASK], clean_text=True, handle_chinese_chars=True, strip_accents=None, lowercase=True, wordpieces_prefix=##)
+Saving tokenizer ...
+Tokenizer(vocabulary_size=500, model=BertWordPiece, unk_token=[UNK], sep_token=[SEP], cls_token=[CLS], pad_token=[PAD], mask_token=[MASK], clean_text=True, handle_chinese_chars=True, strip_accents=None, lowercase=True, wordpieces_prefix=##)
+Saving tokenizer ...
+No config file specified. Using the default config.
+Loading and Tokenizing the data ...
+Read 7291 lines from EN and DE files.
+Loading and Tokenizing the data ...
+Read 1000 lines from EN and DE files.
+Using device: cuda
+Loading models ..
+The encoder has 34,430,976 trainable parameters
+The decoder has 42,714,612 trainable parameters
+The model has 77,145,588 trainable parameters
+Starting epoch 1
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 3.414553466733995
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 18.009780845334454
+CHRF score:  {'score': 23.049567093691714, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.00028567347521782604, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.001, 'translation_length': 7001, 'reference_length': 1000}
+Starting epoch 2
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 2.1461366084905773
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 12.433673681751374
+CHRF score:  {'score': 31.5856174970527, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.008710552620305583, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.003, 'translation_length': 7003, 'reference_length': 1000}
+Starting epoch 3
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 1.5396525365965708
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 9.167918318702329
+CHRF score:  {'score': 42.11622588178443, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.02599628624482217, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.001, 'translation_length': 7001, 'reference_length': 1000}
+Starting epoch 4
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 1.1983017465570471
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 7.118313300994135
+CHRF score:  {'score': 49.031198368577115, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.03815921109046734, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.997, 'translation_length': 6997, 'reference_length': 1000}
+Starting epoch 5
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.9758238402696756
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 5.836592871094903
+CHRF score:  {'score': 52.275244726512796, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.05020022883295194, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.992, 'translation_length': 6992, 'reference_length': 1000}
+Starting epoch 6
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.8006800176350625
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 4.727926193706451
+CHRF score:  {'score': 55.35483719562095, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.05614285714285714, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 7
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.660517846260752
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 3.8112637564059226
+CHRF score:  {'score': 57.859972343348765, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.061, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 8
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.5462444539908524
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 3.13011834578168
+CHRF score:  {'score': 59.47464312470858, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.06428571428571428, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 9
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.4472812871356587
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 2.6207283382574396
+CHRF score:  {'score': 59.98295110843319, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.06557142857142857, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 10
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.36712620097857257
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 2.094858867687083
+CHRF score:  {'score': 62.87922822662957, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.07157142857142858, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 11
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.3085754200652405
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 1.7753736556417519
+CHRF score:  {'score': 63.17886050580043, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.07128571428571429, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 12
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.26484615750365204
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 1.5881828471056876
+CHRF score:  {'score': 63.94734947523456, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.0745607770318526, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.001, 'translation_length': 7001, 'reference_length': 1000}
+Starting epoch 13
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.23863572307995387
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 1.4695177149147756
+CHRF score:  {'score': 64.22784845421607, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.07528571428571429, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 14
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.2167783864906856
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 1.3345633819699287
+CHRF score:  {'score': 64.90361530560918, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.076, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 15
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.19377886205911637
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 1.2651478118233142
+CHRF score:  {'score': 64.6262282949089, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.07557142857142857, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 16
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.1840040300164249
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 1.209426986414098
+CHRF score:  {'score': 65.0637181120887, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.07585714285714286, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 17
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.17624306067169368
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 1.145583585866036
+CHRF score:  {'score': 64.77043680013763, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.07528571428571429, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 18
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.16943587623127215
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 1.0777801943402137
+CHRF score:  {'score': 65.59072136421013, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.077, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 19
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.16702909025025892
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 1.1186666346245235
+CHRF score:  {'score': 64.63142339691684, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.07385714285714286, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 20
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.1673099684355023
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 1.081627730640673
+CHRF score:  {'score': 65.49101086856255, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.07642857142857143, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 21
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.1608992457307957
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 1.0186936454847455
+CHRF score:  {'score': 65.26730941469762, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.077, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 22
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.15819222654451381
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.901510355212996
+CHRF score:  {'score': 66.06669265546176, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.07857142857142857, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 23
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.1496017758007888
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.9602755561711327
+CHRF score:  {'score': 66.06529998342108, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.07757142857142857, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 24
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.14621856258465693
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.8470433655705664
+CHRF score:  {'score': 66.33989238910533, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.0781205369894316, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.002, 'translation_length': 7002, 'reference_length': 1000}
+Starting epoch 25
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.143342234816525
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.8390105081301543
+CHRF score:  {'score': 67.57849565084427, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08157142857142857, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 26
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.13261753453740052
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.8108590243294114
+CHRF score:  {'score': 66.09813784767923, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.07828571428571429, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 27
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.1309044958409536
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.8088326540835682
+CHRF score:  {'score': 67.87176713047556, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.0811312669618626, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.001, 'translation_length': 7001, 'reference_length': 1000}
+Starting epoch 28
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.12910156011540483
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.7496774164028466
+CHRF score:  {'score': 66.99802708956044, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.0811312669618626, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.001, 'translation_length': 7001, 'reference_length': 1000}
+Starting epoch 29
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.12641031511209824
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.666834113052896
+CHRF score:  {'score': 67.257102897134, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08142857142857143, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 30
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.11408677797068606
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.7132060879450892
+CHRF score:  {'score': 67.82814174904324, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08085714285714286, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 31
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.11427538495224256
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.690790704751928
+CHRF score:  {'score': 66.94932205749043, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08014285714285714, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 32
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.10548238674035439
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.6856347117272596
+CHRF score:  {'score': 67.91986833449592, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08371428571428571, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 33
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.10198150713733592
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.6678923608194436
+CHRF score:  {'score': 67.4835845492795, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.082, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 34
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.10552382220688102
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.6262468169124106
+CHRF score:  {'score': 67.43125141984629, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08014285714285714, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 35
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.09595976039808203
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5827184457354427
+CHRF score:  {'score': 68.0136477500956, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08170261391229824, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.001, 'translation_length': 7001, 'reference_length': 1000}
+Starting epoch 36
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.09373023173475004
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5645469523695928
+CHRF score:  {'score': 68.22775443497947, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08314285714285714, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 37
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.09032733243388626
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.6236069467305506
+CHRF score:  {'score': 67.69255807587898, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08271428571428571, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 38
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.08668143164243672
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5981761693875606
+CHRF score:  {'score': 67.1648663962096, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.07985714285714286, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 39
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.08461634248781663
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5769490329830367
+CHRF score:  {'score': 68.12407351495521, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08285714285714285, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 40
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.08234427103588542
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5882320456552289
+CHRF score:  {'score': 67.57222350362213, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08317850507360297, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.997, 'translation_length': 6997, 'reference_length': 1000}
+Starting epoch 41
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.08299650957111965
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.504637761052788
+CHRF score:  {'score': 68.34094511721783, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08471428571428571, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 42
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.08270358661046395
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5337005624305382
+CHRF score:  {'score': 67.59429423788052, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08185714285714285, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 43
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.0742420092752142
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5171997487195767
+CHRF score:  {'score': 68.53368533250377, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08427367518925867, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.001, 'translation_length': 7001, 'reference_length': 1000}
+Starting epoch 44
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.0749086379457347
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5156149924526201
+CHRF score:  {'score': 66.9172002962719, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.081, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 45
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.07421383356245664
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.556104487308579
+CHRF score:  {'score': 67.97032420839717, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08228571428571428, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 46
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.07114903719348649
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.47570801469790297
+CHRF score:  {'score': 67.76724064810095, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08185714285714285, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 47
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.06960823328367301
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.45929647677656893
+CHRF score:  {'score': 67.92936567015524, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08270247107556064, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.001, 'translation_length': 7001, 'reference_length': 1000}
+Starting epoch 48
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.07152620863455993
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.44461296585523674
+CHRF score:  {'score': 68.5080085250276, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.0862487505354848, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.003, 'translation_length': 7003, 'reference_length': 1000}
+Starting epoch 49
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.07622092898940197
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.4677872670703613
+CHRF score:  {'score': 68.53626168282626, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08528571428571428, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 50
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.07040841858168798
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.4918801937301102
+CHRF score:  {'score': 68.76251566989666, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08684473646621911, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.001, 'translation_length': 7001, 'reference_length': 1000}
+Starting epoch 51
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.06981184493115807
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.4870335780705641
+CHRF score:  {'score': 68.30285278864356, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08457142857142858, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 52
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.0638855967913744
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5154926962155338
+CHRF score:  {'score': 69.15246001470189, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08885714285714286, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 53
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.06371154074357556
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5420392210376561
+CHRF score:  {'score': 68.25418634096417, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08357142857142857, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 54
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.06146870279827943
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5328771660217992
+CHRF score:  {'score': 68.90994485033343, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08485714285714285, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 55
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.06986775383824012
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.6103436997077698
+CHRF score:  {'score': 67.50757628036801, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08141694043708042, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.001, 'translation_length': 7001, 'reference_length': 1000}
+Starting epoch 56
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.06763763318662173
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5006455256323886
+CHRF score:  {'score': 69.56867976924978, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08771428571428572, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 57
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.06355099422156114
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.53971059501618
+CHRF score:  {'score': 67.49948168450489, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.083, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 58
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.06280102551515614
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5541007055421248
+CHRF score:  {'score': 67.99233196796327, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08414285714285714, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 59
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.06579744600240592
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5447205039036495
+CHRF score:  {'score': 68.26656724361462, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08457142857142858, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+Starting epoch 60
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean epoch loss: 0.06043589153623843
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Mean validation loss: 0.5221171871605967
+CHRF score:  {'score': 68.08066921491024, 'char_order': 6, 'word_order': 0, 'beta': 2}
+BLEU score:  {'bleu': 0.0, 'precisions': [0.08285714285714285, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.0, 'translation_length': 7000, 'reference_length': 1000}
+(['techjafropah\n'], 'they bofrimize us\n', '[CLS] techjafropah [SEP]')
+(['nechflochoma\n'], 'he froflubates me\n', '[CLS] nechflochoma [SEP]')
+(['tinechkeehefronaqueh\n'], 'we hibinized me\n', '[CLS] tinechkeehefronaqueh [SEP]')
+(['mechkilijonah\n'], 'they jojogize you\n', '[CLS] mitzkilijonah [SEP]')
+(['tinechmoodagah\n'], 'we cuglogate me\n', '[CLS] tinechmoodagah [SEP]')
+(['inquilichubaqueh\n'], 'you jimated him\n', '[CLS] tiquilichubac [SEP]')
+(['timechbodukah\n'], 'we flacomate you\n', '[CLS] timitzbodukah [SEP]')
+(['nimitzchilipac\n'], 'I kanated you\n', '[CLS] nimechchilipac [SEP]')
+(['timitzlifoxaqueh\n'], 'we chififized you\n', '[CLS] timechlifoxaqueh [SEP]')
+(['niquifobac\n'], 'I meefridated him\n', '[CLS] niquifobac [SEP]')
+(['quilochuga\n'], 'he lobudizes him\n', '[CLS] quilochuga [SEP]')
+(['axnechmooforaqueh\n'], 'they did not moojipize me\n', '[CLS] axnechmooforaqueh [SEP]')
+(['inquichuhubaqueh\n'], 'you hekochukated him\n', '[CLS] tiquichuhubac [SEP]')
+(['tinechhucharaqueh\n'], 'we bochotized me\n', '[CLS] tinechhucharaqueh [SEP]')
+(['timitzfobapaqueh\n'], 'we kudafated you\n', '[CLS] timitzfobapaqueh [SEP]')
+(['nechkofa\n'], 'he kofikodates me\n', '[CLS] nechkofa [SEP]')
+(['timechfrijoxah\n'], 'we bulate you\n', '[CLS] timechfrijoxah [SEP]')
+(['innechbifrufufah\n'], 'you bechibegate me\n', '[CLS] tinechbifrufufa [SEP]')
+(['techlomogah\n'], 'they glojaflupize us\n', '[CLS] techlomogah [SEP]')
+(['tinechfrijoxaqueh\n'], 'we bulated me\n', '[CLS] tinechfrijoxaqueh [SEP]')
+(['niquincochopa\n'], 'I jixate them\n', '[CLS] niquinmeechoca [SEP]')
+(['niquinfrobulac\n'], 'I dukiflabized them\n', '[CLS] niquinfrobulac [SEP]')
+(['mechflomoolah\n'], 'they faflorize you\n', '[CLS] mitzflomoolah [SEP]')
+(['nimitzmomooflotac\n'], 'I jakimized you\n', '[CLS] nimechmomooflotac [SEP]')
+(['tinechlichubaqueh\n'], 'we jimated me\n', '[CLS] tinechlichubaqueh [SEP]')
+(['niquifaxac\n'], 'I dagluxated him\n', '[CLS] niquifaxac [SEP]')
+(['inquinchuhubaqueh\n'], 'you hekochukated them\n', '[CLS] tiquinchuhubac [SEP]')
+(['inmechgucukimah\n'], 'you kaganize you\n', '[CLS] timechgucukima [SEP]')
+(['timechchoga\n'], 'you chigapate you\n', '[CLS] inmechchogah [SEP]')
+(['inmechlagakaqueh\n'], 'you gojucated you\n', '[CLS] timechlagakac [SEP]')
+(['quinjumomeema\n'], 'he chilizes them\n', '[CLS] quinjumomeema [SEP]')
+(['tinechhefica\n'], 'you hobodufate me\n', '[CLS] tinechhefica [SEP]')
+(['niquichuhuba\n'], 'I hekochukate him\n', '[CLS] niquichuhuba [SEP]')
+(['axtechflabilifa\n'], 'he does not flijabolate us\n', '[CLS] axtechflabilifa [SEP]')
+(['axnitechbokaxac\n'], 'I did not kodotate us\n', '[CLS] axnitechbokaxac [SEP]')
+(['nechbokilaqueh\n'], 'they dugufrumized me\n', '[CLS] nechbokilaqueh [SEP]')
+(['techkuhuga\n'], 'he dimifrulates us\n', '[CLS] techkuhuga [SEP]')
+(['axtinechkaglupah\n'], 'we do not frahupate me\n', '[CLS] axtinechkaglupah [SEP]')
+(['innechfaglukaqueh\n'], 'you chubukated me\n', '[CLS] innechdaglukaqueh [SEP]')
+(['titechflagluxah\n'], 'we jogochucate us\n', '[CLS] titechflagluxah [SEP]')
+(['ninechhucharac\n'], 'I bochotized me\n', '[CLS] ninechhucharac [SEP]')
+(['timechdaka\n'], 'you homize you\n', '[CLS] inmechdakah [SEP]')
+(['inmitzglahuflabah\n'], 'you fridudate you\n', '[CLS] inmitzglahuflabah [SEP]')
+(['titechmeekagah\n'], 'we hudilize us\n', '[CLS] titechmeekagah [SEP]')
+(['mitzhucukaqueh\n'], 'they birized you\n', '[CLS] mitzhucukaqueh [SEP]')
+(['intechflahulah\n'], 'you flafate us\n', '[CLS] titechflahula [SEP]')
+(['axtimitzjoleechocac\n'], 'you did not bebohinize you\n', '[CLS] axinmechjoleechocaqueh [SEP]')
+(['timechmomabaqueh\n'], 'we jafribated you\n', '[CLS] timitzmomabaqueh [SEP]')
+(['tiquimookanah\n'], 'we meelucize him\n', '[CLS] tiquimookanah [SEP]')
+(['axmechhiguraqueh\n'], 'they did not gaflikize you\n', '[CLS] axmitzhiguraqueh [SEP]')
+(['inmitzfrocotah\n'], 'you kijonize you\n', '[CLS] timechfrocota [SEP]')
+(['tiquifoxah\n'], 'we fixate him\n', '[CLS] tiquifoxah [SEP]')
+(['mechglaka\n'], 'he lamizes you\n', '[CLS] mitzglala [SEP]')
+(['nechhafluna\n'], 'he mooglupizes me\n', '[CLS] nechhafluna [SEP]')
+(['axtimechfliflohilac\n'], 'you did not hahilize you\n', '[CLS] axinmechfliflohilaqueh [SEP]')
+(['mitzmobicac\n'], 'he fikeetized you\n', '[CLS] mechmobicac [SEP]')
+(['inquinglamaraqueh\n'], 'you fagodated them\n', '[CLS] inquinglamaraqueh [SEP]')
+(['axtimechbiga\n'], 'you do not kukeechimize you\n', '[CLS] axtimechbiga [SEP]')
+(['titechleelutac\n'], 'you mochimated us\n', '[CLS] intechleelutaqueh [SEP]')
+(['quinfiglugaqueh\n'], 'they frulated them\n', '[CLS] quinfiglugaqueh [SEP]')
+(['ninechhofa\n'], 'I moogumate me\n', '[CLS] ninechhofa [SEP]')
+(['inmechlahupah\n'], 'you chabogate you\n', '[CLS] inmechlahupah [SEP]')
+(['tinechdihitac\n'], 'you frihecoxized me\n', '[CLS] innechdihitaqueh [SEP]')
+(['axtiquilonah\n'], 'we do not keecate him\n', '[CLS] axtiquilonah [SEP]')
+(['techflokidupah\n'], 'they bumoocutate us\n', '[CLS] techflokidupah [SEP]')
+(['titechbana\n'], 'you difugate us\n', '[CLS] titechbana [SEP]')
+(['tiquiglahuflabac\n'], 'you fridudated him\n', '[CLS] tiquiglahuflabac [SEP]')
+(['titechmaflobac\n'], 'you glologated us\n', '[CLS] titechmaflobac [SEP]')
+(['axninechchoflakifa\n'], 'I do not duglulize me\n', '[CLS] axninechchoflakifa [SEP]')
+(['axinquinmogupah\n'], 'you do not fofate them\n', '[CLS] axtiquinmogupa [SEP]')
+(['quibuta\n'], 'he hefirizes him\n', '[CLS] quibuta [SEP]')
+(['axtiquidalolaqueh\n'], 'we did not glubuxize him\n', '[CLS] axtiquidalolaqueh [SEP]')
+(['timitzjona\n'], 'you bonize you\n', '[CLS] inmechjonah [SEP]')
+(['tiquinjugukaqueh\n'], 'we lufamized them\n', '[CLS] tiquinjugukaqueh [SEP]')
+(['tiquinbibac\n'], 'you dofurized them\n', '[CLS] inquinbibaqueh [SEP]')
+(['mitzgoleeba\n'], 'he bafifromizes you\n', '[CLS] mitzgoleeba [SEP]')
+(['ninechglafita\n'], 'I kukilate me\n', '[CLS] ninechglafita [SEP]')
+(['titechchilipaqueh\n'], 'we kanated us\n', '[CLS] titechchilipaqueh [SEP]')
+(['nimitzkojubita\n'], 'I himeerize you\n', '[CLS] nimechkojubita [SEP]')
+(['niquicuta\n'], 'I flinize him\n', '[CLS] niquicuta [SEP]')
+(['techgamobah\n'], 'they frimafate us\n', '[CLS] techgamobah [SEP]')
+(['intechdihitaqueh\n'], 'you frihecoxized us\n', '[CLS] intechdihitaqueh [SEP]')
+(['quiboleepaqueh\n'], 'they guchirated him\n', '[CLS] quiboleepaqueh [SEP]')
+(['nechkuleefah\n'], 'they golate me\n', '[CLS] nechkuleefah [SEP]')
+(['axinquifaxah\n'], 'you do not dagluxate him\n', '[CLS] axtiquidixa [SEP]')
+(['tinechbiba\n'], 'you dofurize me\n', '[CLS] tinechbiba [SEP]')
+(['mechchuhubah\n'], 'they hekochukate you\n', '[CLS] mitzchuhubah [SEP]')
+(['ninechbifrufufac\n'], 'I bechibegated me\n', '[CLS] ninechbifrufufac [SEP]')
+(['titechfobapac\n'], 'you kudafated us\n', '[CLS] intechfobapaqueh [SEP]')
+(['innechkuchugafah\n'], 'you froflatize me\n', '[CLS] innechkuchugafah [SEP]')
+(['axnitechchubokotac\n'], 'I did not fadulixate us\n', '[CLS] axnitechchubokotac [SEP]')
+(['innechhemeenaqueh\n'], 'you falojucated me\n', '[CLS] tinechhemeenac [SEP]')
+(['inquinkiraqueh\n'], 'you bihudized them\n', '[CLS] tiquinkirac [SEP]')
+(['inquilagakah\n'], 'you gojucate him\n', '[CLS] inquilagakah [SEP]')
+(['intechglotaqueh\n'], 'you dochifated us\n', '[CLS] titechglotac [SEP]')
+(['nechlonaqueh\n'], 'they keecated me\n', '[CLS] nechlonaqueh [SEP]')
+(['axtechfutaqueh\n'], 'they did not likeetize us\n', '[CLS] axtechfutaqueh [SEP]')
+(['tiquimomoxah\n'], 'we fadirize him\n', '[CLS] tiquimomoxah [SEP]')
+(['nimitzchuhuba\n'], 'I hekochukate you\n', '[CLS] nimitzchuhuba [SEP]')
+(['axtinechfrikoxaqueh\n'], 'we did not jihegize me\n', '[CLS] axtinechfrikoxaqueh [SEP]')
+(['nimechdidaga\n'], 'I kicubize you\n', '[CLS] nimechdidaga [SEP]')
+(['axtiquinfluducac\n'], 'you did not chahepate them\n', '[CLS] axtiquinfluducac [SEP]')
+(['axmitzfruglofaqueh\n'], 'they did not bomate you\n', '[CLS] axmechfruglofaqueh [SEP]')
+(['titechmaca\n'], 'you framijacate us\n', '[CLS] intechmacah [SEP]')
+(['ninechchojafuda\n'], 'I kaflokate me\n', '[CLS] ninechchojafuda [SEP]')
+(['inquibacokah\n'], 'you frochamize him\n', '[CLS] tiquibacoka [SEP]')
+(['axtitechfruglofa\n'], 'you do not bomate us\n', '[CLS] axtitechfruglofa [SEP]')
+(['nechchidapa\n'], 'he gorates me\n', '[CLS] nechchidapa [SEP]')
+(['inquinglamaraqueh\n'], 'you fagodated them\n', '[CLS] inquinglamaraqueh [SEP]')
+(['inquijirah\n'], 'you libize him\n', '[CLS] inquibjirah [SEP]')
+(['axmitzjulafrikah\n'], 'they do not lojucize you\n', '[CLS] axmitzjulafrikah [SEP]')
+(['axmechjugukac\n'], 'he did not lufamize you\n', '[CLS] axmitzjugukac [SEP]')
+(['niquiflabilifa\n'], 'I flijabolate him\n', '[CLS] niquiflabilifa [SEP]')
+(['timitzfaglabaqueh\n'], 'we gahoxated you\n', '[CLS] timechfaglabaqueh [SEP]')
+(['nimitzfujumeera\n'], 'I bebemanate you\n', '[CLS] nimechfujumeera [SEP]')
+(['axtitechfibikac\n'], 'you did not keefaflaxize us\n', '[CLS] axtitechfibikac [SEP]')
+(['axtimitzkilijonah\n'], 'we do not jojogize you\n', '[CLS] axtimechkilijonah [SEP]')
+(['timechjamaqueh\n'], 'we hudifated you\n', '[CLS] timechjamaqueh [SEP]')
+(['mechlochuga\n'], 'he lobudizes you\n', '[CLS] mechlochuga [SEP]')
+(['nimechfrijoxa\n'], 'I bulate you\n', '[CLS] nimitzfrijoxa [SEP]')
+(['axmechmoodagaqueh\n'], 'they did not cuglogate you\n', '[CLS] axmechmoodagaqueh [SEP]')
+(['tiquiluchoxa\n'], 'you fuflorate him\n', '[CLS] inquiluchoxah [SEP]')
+(['timechdadafah\n'], 'we frubufutate you\n', '[CLS] timitzdadafah [SEP]')
+(['quijiglona\n'], 'he flofrimalates him\n', '[CLS] quijiglona [SEP]')
+(['tiquihadokaqueh\n'], 'we lamicated him\n', '[CLS] tiquihadokaqueh [SEP]')
+(['techbagoxac\n'], 'he dilabated us\n', '[CLS] techbagoxac [SEP]')
+(['inquinfrihafaqueh\n'], 'you lafrabized them\n', '[CLS] tiquinfrihafac [SEP]')
+(['tiquikojilah\n'], 'we flotate him\n', '[CLS] tiquikojilah [SEP]')
+(['tiquichichamah\n'], 'we difricate him\n', '[CLS] tiquichichamah [SEP]')
+(['axtiquihaleega\n'], 'you do not moofugate him\n', '[CLS] axtiquihaleega [SEP]')
+(['axtechfobac\n'], 'he did not meefridate us\n', '[CLS] axtechfobac [SEP]')
+(['nimitzhodifa\n'], 'I chichaxate you\n', '[CLS] nimitzhodifa [SEP]')
+(['innechlahoxah\n'], 'you jibaharize me\n', '[CLS] innechlahoxah [SEP]')
+(['mitzmogludaqueh\n'], 'they cogucized you\n', '[CLS] mechmogludaqueh [SEP]')
+(['quifrajulac\n'], 'he lochimooxized him\n', '[CLS] quifrajulac [SEP]')
+(['niquigochadac\n'], 'I bajalobized him\n', '[CLS] niquigochadac [SEP]')
+(['axinquibokaxah\n'], 'you do not kodotate him\n', '[CLS] axinquibokaxah [SEP]')
+(['nimitzbigac\n'], 'I kukeechimized you\n', '[CLS] nimechbigac [SEP]')
+(['tinechbigac\n'], 'you kukeechimized me\n', '[CLS] tinechbigac [SEP]')
+(['nitechkufluhixac\n'], 'I dificized us\n', '[CLS] nitechkufluhixac [SEP]')
+(['quigufac\n'], 'he frufricated him\n', '[CLS] quigufac [SEP]')
+(['techkuhugac\n'], 'he dimifrulated us\n', '[CLS] techkuhugac [SEP]')
+(['techhodah\n'], 'they hobochibate us\n', '[CLS] techhodah [SEP]')
+(['quinfuchumah\n'], 'they laloxate them\n', '[CLS] quinfuchumah [SEP]')
+(['nechfokupah\n'], 'they buglokize me\n', '[CLS] nechfokupah [SEP]')
+(['titechhixa\n'], 'you flabize us\n', '[CLS] intechhixah [SEP]')
+(['tinechmolukah\n'], 'we meefate me\n', '[CLS] tinechmolukah [SEP]')
+(['tiquinflikac\n'], 'you jugorated them\n', '[CLS] inquinflikaqueh [SEP]')
+(['axquinfrajulaqueh\n'], 'they did not lochimooxize them\n', '[CLS] axquinfrajulaqueh [SEP]')
+(['intechmolukah\n'], 'you meefate us\n', '[CLS] titechmoluka [SEP]')
+(['intechhuflanaqueh\n'], 'you meeglumated us\n', '[CLS] intechhuflanaqueh [SEP]')
+(['mitzjonaqueh\n'], 'they bonized you\n', '[CLS] mitzjonaqueh [SEP]')
+(['nechchaflicaqueh\n'], 'they meexated me\n', '[CLS] nechchaflicaqueh [SEP]')
+(['mechflucuda\n'], 'he hikolucizes you\n', '[CLS] mechflucuda [SEP]')
+(['inquimoodagah\n'], 'you cuglogate him\n', '[CLS] inquimoodagah [SEP]')
+(['axtimitzcomigah\n'], 'we do not halagate you\n', '[CLS] axtimechcomigah [SEP]')
+(['axtimitzfikaqueh\n'], 'we did not glomotate you\n', '[CLS] axtimechfikaqueh [SEP]')
+(['tinechjica\n'], 'you mobate me\n', '[CLS] tinechjica [SEP]')
+(['titechbilodaqueh\n'], 'we chifated us\n', '[CLS] titechbilodaqueh [SEP]')
+(['techchabaqueh\n'], 'they leefladated us\n', '[CLS] techchabaqueh [SEP]')
+(['titechligloglotaqueh\n'], 'we flobigated us\n', '[CLS] titechligloglotaqueh [SEP]')
+(['axinnechhogluhunah\n'], 'you do not meekihuxize me\n', '[CLS] axtinechkiflapa [SEP]')
+(['quinfubakuxah\n'], 'they milobate them\n', '[CLS] quinfubakuxah [SEP]')
+(['niquihehiba\n'], 'I glufafate him\n', '[CLS] niquihehiba [SEP]')
+(['mechmomooflotah\n'], 'they jakimize you\n', '[CLS] mechmomooflotah [SEP]')
+(['mitzgudifloga\n'], 'he frichopizes you\n', '[CLS] mechgudifloga [SEP]')
+(['quingumoofa\n'], 'he hibates them\n', '[CLS] quinguda [SEP]')
+(['tiquinlonaqueh\n'], 'we keecated them\n', '[CLS] tiquinlonaqueh [SEP]')
+(['timitzchigubac\n'], 'you mafixated you\n', '[CLS] inmitzkaglupaqueh [SEP]')
+(['axquinheluxa\n'], 'he does not culotate them\n', '[CLS] axquinheluta [SEP]')
+(['quikeehefrona\n'], 'he hibinizes him\n', '[CLS] quikeehefrona [SEP]')
+(['nimitzmoodaga\n'], 'I cuglogate you\n', '[CLS] nimitzmoodaga [SEP]')
+(['titechchimaqueh\n'], 'we kileerated us\n', '[CLS] titechchicoflidaqueh [SEP]')
+(['axinquinfrilixah\n'], 'you do not bamoonize them\n', '[CLS] axtiquinfrilixa [SEP]')
+(['tiquinfrugaloda\n'], 'you fufinize them\n', '[CLS] inquinfrugalodah [SEP]')
+(['timechfrafona\n'], 'you bojapize you\n', '[CLS] inmitzfrafonah [SEP]')
+(['axquingudaqueh\n'], 'they did not henize them\n', '[CLS] axquingudaqueh [SEP]')
+(['niquinbelufac\n'], 'I meeholated them\n', '[CLS] niquinbelufac [SEP]')
+(['axnimechfrilixa\n'], 'I do not bamoonize you\n', '[CLS] axnimitzfrilixa [SEP]')
+(['axtiquindalolaqueh\n'], 'we did not glubuxize them\n', '[CLS] axtiquindalolaqueh [SEP]')
+(['titechfalikac\n'], 'you flofrixated us\n', '[CLS] intechfataqueh [SEP]')
+(['mechbofubefac\n'], 'he flabafated you\n', '[CLS] mechbofubefac [SEP]')
+(['axtimechglabina\n'], 'you do not halocize you\n', '[CLS] axinmechglabinah [SEP]')
+(['tinechfiglugah\n'], 'we frulate me\n', '[CLS] tinechfiglugah [SEP]')
+(['titechjokixac\n'], 'you dakated us\n', '[CLS] intechjokixaqueh [SEP]')
+(['intechhilopaqueh\n'], 'you gafurated us\n', '[CLS] intechhilopaqueh [SEP]')
+(['inmechhedaqueh\n'], 'you hachicated you\n', '[CLS] timechhedac [SEP]')
+(['titechfoladobaqueh\n'], 'we frakeemated us\n', '[CLS] titechfoladobaqueh [SEP]')
+(['techluxah\n'], 'they halogate us\n', '[CLS] techluxah [SEP]')
+(['axnechchoflakifac\n'], 'he did not duglulize me\n', '[CLS] axnechchoflakifac [SEP]')
+(['axmitzjumoma\n'], 'he does not difranate you\n', '[CLS] axmitzjumoma [SEP]')
+(['tiquinlonac\n'], 'you keecated them\n', '[CLS] tiquinlonac [SEP]')
+(['axtechkalifac\n'], 'he did not doflogize us\n', '[CLS] axtechkalifac [SEP]')
+(['innechkaglupah\n'], 'you frahupate me\n', '[CLS] innechkaglupah [SEP]')
+(['quinflucuda\n'], 'he hikolucizes them\n', '[CLS] quinflucuda [SEP]')
+(['niquinflochomac\n'], 'I froflubated them\n', '[CLS] niquinflochomac [SEP]')
+(['nimechbiga\n'], 'I kukeechimize you\n', '[CLS] nimitzbiga [SEP]')
+(['niquigufribac\n'], 'I fribilated him\n', '[CLS] niquigufribac [SEP]')
+(['mitzfobah\n'], 'they meefridate you\n', '[CLS] mechfobah [SEP]')
+(['tinechkuhaca\n'], 'you dilidize me\n', '[CLS] tinechkuhaca [SEP]')
+(['inmitzflufufotaqueh\n'], 'you bifrorated you\n', '[CLS] inmitzflufufotaqueh [SEP]')
+(['axnimitzflahula\n'], 'I do not flafate you\n', '[CLS] axnimitzflahula [SEP]')
+(['axinmitzmoodagaqueh\n'], 'you did not cuglogate you\n', '[CLS] axinmitzmoodagaqueh [SEP]')
+(['inquichujomoomaqueh\n'], 'you liflahocized him\n', '[CLS] tiquichujomoomac [SEP]')
+(['titechgoglala\n'], 'you moomilunate us\n', '[CLS] titechgoglalac [SEP]')
+(['quichuhuba\n'], 'he hekochukates him\n', '[CLS] quichuhuba [SEP]')
+(['inquibumeepaqueh\n'], 'you dafrubized him\n', '[CLS] inquibumeepaqueh [SEP]')
+(['inmitzjahimaqueh\n'], 'you fadunated you\n', '[CLS] timechjahimac [SEP]')
+(['nechgadofropac\n'], 'he frameexated me\n', '[CLS] nechgadofropac [SEP]')
+(['mechdububac\n'], 'he jodaflinated you\n', '[CLS] mechdububac [SEP]')
+(['inquinmoodofaqueh\n'], 'you lohexized them\n', '[CLS] tiquinmoodofac [SEP]')
+(['inquicufalah\n'], 'you fradoxate him\n', '[CLS] inquicufalah [SEP]')
+(['timitzglolomac\n'], 'you floganated you\n', '[CLS] inmechglolomaqueh [SEP]')
+(['inquincucah\n'], 'you dufate them\n', '[CLS] tiquincuca [SEP]')
+(['inquingufrabah\n'], 'you hijidate them\n', '[CLS] tiquingufraba [SEP]')
+(['timitzhihumaqueh\n'], 'we flugaxated you\n', '[CLS] timechhihumaqueh [SEP]')
+(['axtiquinfrokachuxah\n'], 'we do not chalocize them\n', '[CLS] axtiquinfrokachuxah [SEP]')
+(['tiquihanah\n'], 'we glabilate him\n', '[CLS] tiquihanah [SEP]')
+(['techdalolaqueh\n'], 'they glubuxized us\n', '[CLS] techdalolaqueh [SEP]')
+(['inmitzbokilah\n'], 'you dugufrumize you\n', '[CLS] inmitzbokilah [SEP]')
+(['quinhefica\n'], 'he hobodufates them\n', '[CLS] quinhefica [SEP]')
+(['axinquinboleepah\n'], 'you do not guchirate them\n', '[CLS] axtiquinboleepa [SEP]')
+(['timitzhifocaqueh\n'], 'we moofrutized you\n', '[CLS] timitzhifocaqueh [SEP]')
+(['nimitzfujifac\n'], 'I meecotized you\n', '[CLS] nimechfujifac [SEP]')
+(['axquilolufah\n'], 'they do not juhojorate him\n', '[CLS] axquilolufah [SEP]')
+(['titechchaflicac\n'], 'you meexated us\n', '[CLS] intechchaflicaqueh [SEP]')
+(['inquinbumeepah\n'], 'you dafrubize them\n', '[CLS] inquinbumeepah [SEP]')
+(['mechkodafah\n'], 'they lulize you\n', '[CLS] mitzkodafah [SEP]')
+(['innechchogaqueh\n'], 'you chigapated me\n', '[CLS] innechchogaqueh [SEP]')
+(['axquifuchumac\n'], 'he did not laloxate him\n', '[CLS] axquifuchumac [SEP]')
+(['tinechkilijonah\n'], 'we jojogize me\n', '[CLS] tinechkilijonah [SEP]')
+(['quiduka\n'], 'he gugagolizes him\n', '[CLS] quiduka [SEP]')
+(['inquinbacokaqueh\n'], 'you frochamized them\n', '[CLS] tiquinbacokac [SEP]')
+(['nitechjugukac\n'], 'I lufamized us\n', '[CLS] nitechjugukac [SEP]')
+(['mechmoodaga\n'], 'he cuglogates you\n', '[CLS] mitzmoodaga [SEP]')
+(['mitzgluglodugaqueh\n'], 'they flogaxated you\n', '[CLS] mechgluglodugaqueh [SEP]')
+(['tinechdomoona\n'], 'you jafize me\n', '[CLS] innechdomoonah [SEP]')
+(['ninechkiba\n'], 'I jufrofize me\n', '[CLS] ninechkiba [SEP]')
+(['axniquijulafrika\n'], 'I do not lojucize him\n', '[CLS] axniquijulafrika [SEP]')
+(['timitzchibeguxaqueh\n'], 'we hufripated you\n', '[CLS] timitzchibeguxaqueh [SEP]')
+(['axtechhafluna\n'], 'he does not mooglupize us\n', '[CLS] axtechhafluna [SEP]')
+(['techchohifa\n'], 'he lajubizes us\n', '[CLS] techchohifa [SEP]')
+(['inmitzgafruraqueh\n'], 'you hechopated you\n', '[CLS] inmechgafruraqueh [SEP]')
+(['titechhikofa\n'], 'you hekize us\n', '[CLS] intechhikofah [SEP]')
+(['tiquinmeeba\n'], 'you bahunize them\n', '[CLS] inquinmeebah [SEP]')
+(['titechhaflunah\n'], 'we mooglupize us\n', '[CLS] titechhaflunah [SEP]')
+(['titechglahamaqueh\n'], 'we figarated us\n', '[CLS] titechglahamaqueh [SEP]')
+(['techbicura\n'], 'he hakizes us\n', '[CLS] techbicura [SEP]')
+(['axtiquilichubah\n'], 'we do not jimate him\n', '[CLS] axtiquilichubah [SEP]')
+(['inmechchafrobah\n'], 'you bubekate you\n', '[CLS] timechchafroba [SEP]')
+(['titechfruglofac\n'], 'you bomated us\n', '[CLS] intechfruglofaqueh [SEP]')
+(['tiquinmootah\n'], 'we hefize them\n', '[CLS] tiquinbelinah [SEP]')
+(['tinechhofaqueh\n'], 'we moogumated me\n', '[CLS] tinechhofaqueh [SEP]')
+(['nechlijofimaqueh\n'], 'they gukifated me\n', '[CLS] nechlifaqueh [SEP]')
+(['axtinechmichuhaxaqueh\n'], 'we did not kucupate me\n', '[CLS] axtinechmichuhaxaqueh [SEP]')
+(['timechkeehefronaqueh\n'], 'we hibinized you\n', '[CLS] timitzkeehefronaqueh [SEP]')
+(['inquinjamaqueh\n'], 'you hudifated them\n', '[CLS] inquinjamaqueh [SEP]')
+(['ninechgufrileecac\n'], 'I meefrokated me\n', '[CLS] ninechgufrileecac [SEP]')
+(['mechkeechona\n'], 'he mibefates you\n', '[CLS] mitzkeechona [SEP]')
+(['intechglafitah\n'], 'you kukilate us\n', '[CLS] intechflomoolah [SEP]')
+(['tinechbana\n'], 'you difugate me\n', '[CLS] tinechbana [SEP]')
+(['axtimitzchoflakifah\n'], 'we do not duglulize you\n', '[CLS] axtimechchoflakifah [SEP]')
+(['axnimitzfuchuna\n'], 'I do not bufligize you\n', '[CLS] axnimechfuchuna [SEP]')
+(['timechhika\n'], 'you macize you\n', '[CLS] timitzhika [SEP]')
+(['quigukimac\n'], 'he fihixated him\n', '[CLS] quigukimac [SEP]')
+(['nechmidocac\n'], 'he lilufized me\n', '[CLS] nechmidocac [SEP]')
+(['inquilahupah\n'], 'you chabogate him\n', '[CLS] inquilahupah [SEP]')
+(['niquibulica\n'], 'I chahaglumate him\n', '[CLS] niquibulica [SEP]')
+(['innechmobicah\n'], 'you fikeetize me\n', '[CLS] tinechmobica [SEP]')
+(['axtimechbukirac\n'], 'you did not moochobize you\n', '[CLS] axtimitzbukirac [SEP]')
+(['axnimechfahaka\n'], 'I do not boglulize you\n', '[CLS] axnimitzfahaka [SEP]')
+(['intechmoflafaqueh\n'], 'you dalofupated us\n', '[CLS] titechmoflafac [SEP]')
+(['timechbacoka\n'], 'you frochamize you\n', '[CLS] inmechbacokah [SEP]')
+(['quikamocac\n'], 'he fribifized him\n', '[CLS] quikamocac [SEP]')
+(['timechdafronah\n'], 'we flufligarate you\n', '[CLS] timechdafronah [SEP]')
+(['quinhofa\n'], 'he moogumates them\n', '[CLS] quinhofa [SEP]')
+(['inquilifoxaqueh\n'], 'you chififized him\n', '[CLS] inquilifoxaqueh [SEP]')
+(['quinfagluka\n'], 'he chubukates them\n', '[CLS] quinfagluka [SEP]')
+(['tinechdoguhogah\n'], 'we dixize me\n', '[CLS] tinechdocokah [SEP]')
+(['tinechfibikaqueh\n'], 'we keefaflaxized me\n', '[CLS] tinechfibikaqueh [SEP]')
+(['axquinfomalah\n'], 'they do not maglacate them\n', '[CLS] axquinfomalah [SEP]')
+(['axquifobah\n'], 'they do not meefridate him\n', '[CLS] axquifobah [SEP]')
+(['niquinjochuta\n'], 'I dubagate them\n', '[CLS] niquinjochuta [SEP]')
+(['timitzkibac\n'], 'you jufrofized you\n', '[CLS] inmitzkibaqueh [SEP]')
+(['axtimechjumomeema\n'], 'you do not chilize you\n', '[CLS] axtimitzjumomeema [SEP]')
+(['nechflipa\n'], 'he flifikizes me\n', '[CLS] nechflipa [SEP]')
+(['intechbifaqueh\n'], 'you hijofilated us\n', '[CLS] intechbifaqueh [SEP]')
+(['niquindalolac\n'], 'I glubuxized them\n', '[CLS] niquindalolac [SEP]')
+(['innechfabacaqueh\n'], 'you frafrokized me\n', '[CLS] innechfabacaqueh [SEP]')
+(['inmitzbikatah\n'], 'you fraburize you\n', '[CLS] inmechbikatah [SEP]')
+(['axtiquinfodofroca\n'], 'you do not bucate them\n', '[CLS] axtiquinfodofroca [SEP]')
+(['mechmoodagaqueh\n'], 'they cuglogated you\n', '[CLS] mechmoodagaqueh [SEP]')
+(['inquihochapah\n'], 'you goglolize him\n', '[CLS] tiquihochapa [SEP]')
+(['inmitzhuflanah\n'], 'you fladafate you\n', '[CLS] inmechhuflanah [SEP]')
+(['niquinbudara\n'], 'I colodize them\n', '[CLS] niquinbudara [SEP]')
+(['nitechlochuga\n'], 'I lobudize us\n', '[CLS] nitechlochuga [SEP]')
+(['mitzgoleeba\n'], 'he bafifromizes you\n', '[CLS] mitzgoleeba [SEP]')
+(['axnimitzmogluda\n'], 'I do not cogucize you\n', '[CLS] axnimechmogluda [SEP]')
+(['nechlulahuta\n'], 'he keecokates me\n', '[CLS] nechhuba [SEP]')
+(['inquinbutaqueh\n'], 'you hefirized them\n', '[CLS] tiquinbutac [SEP]')
+(['axtiquingluglodugaqueh\n'], 'we did not flogaxate them\n', '[CLS] axtiquingluglodugaqueh [SEP]')
+(['niquidolata\n'], 'I chunize him\n', '[CLS] niquiliflimi [SEP]')
+(['axniquinfruguxac\n'], 'I did not moomoobize them\n', '[CLS] axniquinfruguxac [SEP]')
+(['ninechbokaxa\n'], 'I kodotate me\n', '[CLS] ninechbokaxa [SEP]')
+(['nechluxaqueh\n'], 'they doflokidated me\n', '[CLS] nechluxaqueh [SEP]')
+(['axquiflogaqueh\n'], 'they did not jobate him\n', '[CLS] axquiflogaqueh [SEP]')
+(['quinfrimeenah\n'], 'they gluflacize them\n', '[CLS] quinfrimeenah [SEP]')
+(['axquijaglumaqueh\n'], 'they did not frokutate him\n', '[CLS] axquijaglumaqueh [SEP]')
+(['tinechkumah\n'], 'we jugacokate me\n', '[CLS] tinechmahidah [SEP]')
+(['ninechchokeeta\n'], 'I flufurize me\n', '[CLS] ninechchokeeta [SEP]')
+(['techglukeeca\n'], 'he hihonizes us\n', '[CLS] techglukeeca [SEP]')
+(['niquinflumoofronac\n'], 'I jafrinized them\n', '[CLS] niquinflumoofronac [SEP]')
+(['techfruflapaqueh\n'], 'they leejohamated us\n', '[CLS] techfruflapaqueh [SEP]')
+(['timechgufaqueh\n'], 'we frufricated you\n', '[CLS] timechgufaqueh [SEP]')
+(['quinjoxah\n'], 'they meeglufize them\n', '[CLS] quinjoxah [SEP]')
+(['axtiquingotac\n'], 'you did not dofanize them\n', '[CLS] axtiquingotac [SEP]')
+(['niquifalopac\n'], 'I luglabulated him\n', '[CLS] niquifalopac [SEP]')
+(['nimitzkabubicac\n'], 'I domixated you\n', '[CLS] nimitzkabubicac [SEP]')
+(['axinnechkuhugah\n'], 'you do not dimifrulate me\n', '[CLS] axinnechkuhugah [SEP]')
+(['tiquinfluharah\n'], 'we gluchinize them\n', '[CLS] tiquinfluharah [SEP]')
+(['tiquinlonaqueh\n'], 'we keecated them\n', '[CLS] tiquinlonaqueh [SEP]')
+(['quinchihafac\n'], 'he cucized them\n', '[CLS] quinchoflalac [SEP]')
+(['nimechjira\n'], 'I libize you\n', '[CLS] nimechjira [SEP]')
+(['axtiquimeechamac\n'], 'you did not hadanize him\n', '[CLS] axtiquimeechamac [SEP]')
+(['techlahoxah\n'], 'they jibaharize us\n', '[CLS] techlahoxah [SEP]')
+(['axinnechfroloflataqueh\n'], 'you did not kifradate me\n', '[CLS] axtinechfroloflatac [SEP]')
+(['nimechbigac\n'], 'I kukeechimized you\n', '[CLS] nimitzbigac [SEP]')
+(['tiquinbocaqueh\n'], 'we keefrudikated them\n', '[CLS] tiquinbocaqueh [SEP]')
+(['inmechkeehefronah\n'], 'you hibinize you\n', '[CLS] timechkeehefrona [SEP]')
+(['tiquinjica\n'], 'you mobate them\n', '[CLS] tiquinjica [SEP]')
+(['quincoba\n'], 'he cukeedizes them\n', '[CLS] quincoba [SEP]')
+(['tinechchabah\n'], 'we leefladate me\n', '[CLS] tinechchabah [SEP]')
+(['tinechmolata\n'], 'you frumobate me\n', '[CLS] tinechmolata [SEP]')
+(['mitzflochomaqueh\n'], 'they froflubated you\n', '[CLS] mechflochomaqueh [SEP]')
+(['axintechjifrigah\n'], 'you do not junize us\n', '[CLS] axtitechjifriga [SEP]')
+(['timitzglahamah\n'], 'we figarate you\n', '[CLS] timitzglahamah [SEP]')
+(['niquinfluflulac\n'], 'I chugurated them\n', '[CLS] niquinfluflulac [SEP]')
+(['tiquimoofatac\n'], 'you gobuchadated him\n', '[CLS] tiquimoofatac [SEP]')
+(['nitechgluxa\n'], 'I bobate us\n', '[CLS] nitechhaboga [SEP]')
+(['niquifujogloxac\n'], 'I gucokized him\n', '[CLS] niquifujogloxac [SEP]')
+(['timechjaglumaqueh\n'], 'we frokutated you\n', '[CLS] timechjaglumaqueh [SEP]')
+(['mitzdihitaqueh\n'], 'they frihecoxized you\n', '[CLS] mechdihitaqueh [SEP]')
+(['inquinmooleechinaqueh\n'], 'you behufated them\n', '[CLS] tiquinmooleechinac [SEP]')
+(['axquimamotac\n'], 'he did not lobafrunate him\n', '[CLS] axquimamotac [SEP]')
+(['niquinjafropa\n'], 'I bofrimize them\n', '[CLS] niquinjafropa [SEP]')
+(['timitzchujomooma\n'], 'you liflahocize you\n', '[CLS] timechchujomooma [SEP]')
+(['nimitzkuluta\n'], 'I chulixize you\n', '[CLS] nimechchafida [SEP]')
+(['titechglogafliga\n'], 'you hedugize us\n', '[CLS] titechglogafliga [SEP]')
+(['axtimitzjikeedubah\n'], 'we do not buchobize you\n', '[CLS] axtimitzjikeedubah [SEP]')
+(['ninechlumac\n'], 'I jolamized me\n', '[CLS] ninechlumac [SEP]')
+(['axquibifimac\n'], 'he did not chadomate him\n', '[CLS] axquibifimac [SEP]')
+(['quileerah\n'], 'they keegize him\n', '[CLS] quileerah [SEP]')
+(['quinboglatah\n'], 'they gojorize them\n', '[CLS] quinboglatah [SEP]')
+(['intechmeeflilaqueh\n'], 'you glocated us\n', '[CLS] intechmeeflilaqueh [SEP]')
+(['intechjumacah\n'], 'you flulize us\n', '[CLS] titechjuda [SEP]')
+(['timechchatac\n'], 'you fulized you\n', '[CLS] inmechchataqueh [SEP]')
+(['axtiquibica\n'], 'you do not fadafate him\n', '[CLS] axinquimomoxah [SEP]')
+(['titechmichuhaxa\n'], 'you kucupate us\n', '[CLS] titechmichuhaxa [SEP]')
+(['niquinmofrobona\n'], 'I moolucate them\n', '[CLS] niquinmoga [SEP]')
+(['nitechjojoca\n'], 'I goburize us\n', '[CLS] nitechjojoca [SEP]')
+(['mechgudiflogah\n'], 'they frichopize you\n', '[CLS] mechgudiflogah [SEP]')
+(['axtitechhegujodaqueh\n'], 'we did not momamize us\n', '[CLS] axtitechhegujodaqueh [SEP]')
+(['tiquidomoocah\n'], 'we leechodudize him\n', '[CLS] tiquidomoocah [SEP]')
+(['axniquileehujokac\n'], 'I did not cofalize him\n', '[CLS] axniquileehujokac [SEP]')
+(['axinquinmobicaqueh\n'], 'you did not fikeetize them\n', '[CLS] axinquinmobicaqueh [SEP]')
+(['tiquinhuflunac\n'], 'you frajucated them\n', '[CLS] tiquinfilolac [SEP]')
+(['timechlofladidah\n'], 'we jufrigorate you\n', '[CLS] timitzlofladidah [SEP]')
+(['ninechmokodixac\n'], 'I chokokated me\n', '[CLS] ninechmodatac [SEP]')
+(['niquinglotac\n'], 'I dochifated them\n', '[CLS] niquinglotac [SEP]')
+(['axtitechhuflunaqueh\n'], 'we did not frajucate us\n', '[CLS] axtitechhuflunaqueh [SEP]')
+(['nitechfacucura\n'], 'I lacupate us\n', '[CLS] nitechfacucura [SEP]')
+(['titechflimaqueh\n'], 'we fluleetated us\n', '[CLS] titechflimaqueh [SEP]')
+(['tiquinchuhubaqueh\n'], 'we hekochukated them\n', '[CLS] tiquinchuhubaqueh [SEP]')
+(['titechfujogloxaqueh\n'], 'we gucokized us\n', '[CLS] titechfujogloxaqueh [SEP]')
+(['inmechlabolah\n'], 'you hulafize you\n', '[CLS] inmechlabolah [SEP]')
+(['tinechdifura\n'], 'you hofrubize me\n', '[CLS] tinechdifura [SEP]')
+(['nechkeehefronac\n'], 'he hibinized me\n', '[CLS] nechkeehefronac [SEP]')
+(['quicuframac\n'], 'he chiflafated him\n', '[CLS] quicuframac [SEP]')
+(['niquimeejorac\n'], 'I dacated him\n', '[CLS] niquimeejorac [SEP]')
+(['axnimitzgloda\n'], 'I do not cholatize you\n', '[CLS] axnimechgloda [SEP]')
+(['quinchoflakifa\n'], 'he duglulizes them\n', '[CLS] quinchoflakifa [SEP]')
+(['axtiquincohana\n'], 'you do not mooheleegize them\n', '[CLS] axtiquincohana [SEP]')
+(['axinnechmeegoflolaqueh\n'], 'you did not lifize me\n', '[CLS] axtinechmeegoflolac [SEP]')
+(['mechflaleeta\n'], 'he kubifates you\n', '[CLS] mechflaleeta [SEP]')
+(['niquijonac\n'], 'I bonized him\n', '[CLS] niquijonac [SEP]')
+(['axtimechflijakah\n'], 'we do not flopize you\n', '[CLS] axtimechflijakah [SEP]')
+(['axtitechgufrufa\n'], 'you do not mohapate us\n', '[CLS] axtitechgufrufa [SEP]')
+(['nechjoleechocaqueh\n'], 'they bebohinized me\n', '[CLS] nechjoleechocaqueh [SEP]')
+(['niquiglalac\n'], 'I bafulated him\n', '[CLS] niquiglalac [SEP]')
+(['axtimechbofubefac\n'], 'you did not flabafate you\n', '[CLS] axinmechbofubefaqueh [SEP]')
+(['titechjumomeemac\n'], 'you chilized us\n', '[CLS] intechjumomeemaqueh [SEP]')
+(['timechminaqueh\n'], 'we globocized you\n', '[CLS] timechminaqueh [SEP]')
+(['niquibexa\n'], 'I boluhufize him\n', '[CLS] niquibexa [SEP]')
+(['timitzgofraxa\n'], 'you kacunize you\n', '[CLS] inmitzgofraxah [SEP]')
+(['axtimechmalobetah\n'], 'we do not golutize you\n', '[CLS] axtimechmalobetah [SEP]')
+(['mitzchuhubah\n'], 'they hekochukate you\n', '[CLS] mitzchuhubah [SEP]')
+(['nitechglahofrita\n'], 'I jileemize us\n', '[CLS] nitechglahofrita [SEP]')
+(['mechgloludaqueh\n'], 'they fatized you\n', '[CLS] mechchakoraqueh [SEP]')
+(['nechmobafrila\n'], 'he fabadizes me\n', '[CLS] nechmobafrila [SEP]')
+(['techbacokah\n'], 'they frochamize us\n', '[CLS] techbacokah [SEP]')
+(['tiquiflabilifaqueh\n'], 'we flijabolated him\n', '[CLS] tiquiflabilifaqueh [SEP]')
+(['tinechmeejuglomaqueh\n'], 'we bidized me\n', '[CLS] tinechmeejuglomaqueh [SEP]')
+(['tiquinlochugaqueh\n'], 'we lobudized them\n', '[CLS] tiquinlochugaqueh [SEP]')
+(['axniquijumoma\n'], 'I do not difranate him\n', '[CLS] axniquijumoma [SEP]')
+(['inquinkojilah\n'], 'you flotate them\n', '[CLS] inquinkojilah [SEP]')
+(['timechchoga\n'], 'you chigapate you\n', '[CLS] inmechchogah [SEP]')
+(['inmechlixaqueh\n'], 'you mameebized you\n', '[CLS] inmechlixaqueh [SEP]')
+(['axnechfrimeenaqueh\n'], 'they did not gluflacize me\n', '[CLS] axnechfrimeenaqueh [SEP]')
+(['mechheficac\n'], 'he hobodufated you\n', '[CLS] mechheficac [SEP]')
+(['timechkufluhixa\n'], 'you dificize you\n', '[CLS] timitzkufluhixa [SEP]')
+(['timechfupah\n'], 'we ladize you\n', '[CLS] timitzfupaqueh [SEP]')
+(['mechflobijilaqueh\n'], 'they kidized you\n', '[CLS] mechflobijilaqueh [SEP]')
+(['axnechlafrifa\n'], 'he does not flumeemize me\n', '[CLS] axnechlafrifa [SEP]')
+(['tiquiheficah\n'], 'we hobodufate him\n', '[CLS] tiquiheficah [SEP]')
+(['titechflumeecac\n'], 'you duburated us\n', '[CLS] intechflumeecaqueh [SEP]')
+(['nechkeekoma\n'], 'he janates me\n', '[CLS] nechluga [SEP]')
+(['timechfrodoba\n'], 'you lachocate you\n', '[CLS] timechfrodoba [SEP]')
+(['tinechkuhugaqueh\n'], 'we dimifrulated me\n', '[CLS] tinechkuhugaqueh [SEP]')
+(['quinmafotaqueh\n'], 'they mamilized them\n', '[CLS] quinmafotah [SEP]')
+(['inquinbochalaqueh\n'], 'you lobated them\n', '[CLS] inquinbochalaqueh [SEP]')
+(['timitzjulafrikaqueh\n'], 'we lojucized you\n', '[CLS] timitzjulafrikaqueh [SEP]')
+(['timitzmalota\n'], 'you mootate you\n', '[CLS] timechmafa [SEP]')
+(['inquikafrinah\n'], 'you kagamate him\n', '[CLS] tiquikafrina [SEP]')
+(['axinmechfamajipah\n'], 'you do not kabixate you\n', '[CLS] axinmechfamajipah [SEP]')
+(['mechmahida\n'], 'he gufrabizes you\n', '[CLS] mitzmahida [SEP]')
+(['axquihoflokac\n'], 'he did not lafilize him\n', '[CLS] axquihoflokac [SEP]')
+(['axtiquibiga\n'], 'you do not kukeechimize him\n', '[CLS] axtiquibiga [SEP]')
+(['mitzfabacah\n'], 'they frafrokize you\n', '[CLS] mechfabacah [SEP]')
+(['timitzchilipaqueh\n'], 'we kanated you\n', '[CLS] timechchilipaqueh [SEP]')
+(['quigajadaqueh\n'], 'they chabatated him\n', '[CLS] quigajadaqueh [SEP]')
+(['techfrijuma\n'], 'he folates us\n', '[CLS] techfrijuna [SEP]')
+(['tiquinfrifudac\n'], 'you frucharated them\n', '[CLS] tiquinfrifudac [SEP]')
+(['mechhadoka\n'], 'he lamicates you\n', '[CLS] mechhadoka [SEP]')
+(['axtiquibumeepa\n'], 'you do not dafrubize him\n', '[CLS] axinquibumeepah [SEP]')
+(['intechkogluglagaqueh\n'], 'you jufromokized us\n', '[CLS] titechkogluglagac [SEP]')
+(['techluflobac\n'], 'he jafrigized us\n', '[CLS] techluflobac [SEP]')
+(['nitechkadoflixac\n'], 'I leedibized us\n', '[CLS] nitechkadoflixac [SEP]')
+(['quinhigurah\n'], 'they gaflikize them\n', '[CLS] quinhigurah [SEP]')
+(['inquinfrijanah\n'], 'you gugahadize them\n', '[CLS] tiquinfrijana [SEP]')
+(['niquiboleepa\n'], 'I guchirate him\n', '[CLS] niquiboleepa [SEP]')
+(['axquinkeehefrona\n'], 'he does not hibinize them\n', '[CLS] axquinkeehefrona [SEP]')
+(['innechdofrukeexaqueh\n'], 'you bofated me\n', '[CLS] tinechfilomac [SEP]')
+(['niquileemoka\n'], 'I kojalate him\n', '[CLS] niquileemoka [SEP]')
+(['inquinkuhugah\n'], 'you dimifrulate them\n', '[CLS] inquinkuhugah [SEP]')
+(['tiquikufluhixa\n'], 'you dificize him\n', '[CLS] tiquikufluhixa [SEP]')
+(['tiquinfuchopaqueh\n'], 'we jadogated them\n', '[CLS] tiquinfuchopaqueh [SEP]')
+(['quinhehamah\n'], 'they kakapate them\n', '[CLS] quinhehamah [SEP]')
+(['titechfaglabac\n'], 'you gahoxated us\n', '[CLS] intechfaglabaqueh [SEP]')
+(['axnimechfrocotac\n'], 'I did not kijonize you\n', '[CLS] axnimitzfrocotac [SEP]')
+(['nechlojimoocah\n'], 'they kijatize me\n', '[CLS] nechlojimoocah [SEP]')
+(['inmechglafitaqueh\n'], 'you kukilated you\n', '[CLS] inmitzglafitaqueh [SEP]')
+(['tiquinfaflokac\n'], 'you chudixated them\n', '[CLS] tiquinfaflokac [SEP]')
+(['timechleekana\n'], 'you hofrupate you\n', '[CLS] inmechleekanah [SEP]')
+(['nimechjudac\n'], 'I jufonized you\n', '[CLS] nimechjudac [SEP]')
+(['innechlufrobah\n'], 'you lahipate me\n', '[CLS] innechlufrobah [SEP]')
+(['mechbigaqueh\n'], 'they kukeechimized you\n', '[CLS] mechbigaqueh [SEP]')
+(['axnitechflabilifac\n'], 'I did not flijabolate us\n', '[CLS] axnitechglaxac [SEP]')
+(['nitechflahulac\n'], 'I flafated us\n', '[CLS] nitechflahulac [SEP]')
+(['axinmechgubilomah\n'], 'you do not kukeelize you\n', '[CLS] axinmechgubilomah [SEP]')
+(['nitechflakiga\n'], 'I fradakate us\n', '[CLS] nitechflakiga [SEP]')
+(['tiquihefrafa\n'], 'you homeebagize him\n', '[CLS] inquihefrafah [SEP]')
+(['ninechlonac\n'], 'I keecated me\n', '[CLS] ninechlonac [SEP]')
+(['axinquikilijonaqueh\n'], 'you did not jojogize him\n', '[CLS] axtiquikilijonac [SEP]')
+(['mitzlokac\n'], 'he kulucated you\n', '[CLS] mitzkocokac [SEP]')
+(['techbukirac\n'], 'he moochobized us\n', '[CLS] techbukirac [SEP]')
+(['axmitzlona\n'], 'he does not keecate you\n', '[CLS] axmitzlona [SEP]')
+(['mechjirac\n'], 'he libized you\n', '[CLS] mitzjirac [SEP]')
+(['axquinhifocac\n'], 'he did not moofrutize them\n', '[CLS] axquinhifocac [SEP]')
+(['tiquinchuhubah\n'], 'we hekochukate them\n', '[CLS] tiquinchuhubah [SEP]')
+(['nimechbiga\n'], 'I kukeechimize you\n', '[CLS] nimitzbiga [SEP]')
+(['quinboca\n'], 'he keefrudikates them\n', '[CLS] quinboca [SEP]')
+(['titechchulitac\n'], 'you lilukatized us\n', '[CLS] intechchulitaqueh [SEP]')
+(['tiquinchufanaqueh\n'], 'we chofated them\n', '[CLS] tiquinlifaqueh [SEP]')
+(['axtinechkomaxah\n'], 'we do not fafocodize me\n', '[CLS] axtinechkomaxah [SEP]')
+(['mitzmibenaqueh\n'], 'they flukikized you\n', '[CLS] mechmibenaqueh [SEP]')
+(['axtitechjotac\n'], 'you did not kofrupate us\n', '[CLS] axtitechjotac [SEP]')
+(['nimechchilipa\n'], 'I kanate you\n', '[CLS] nimitzchilipa [SEP]')
+(['timechbukeemah\n'], 'we komalate you\n', '[CLS] timitzbukeemah [SEP]')
+(['nechhihifunaqueh\n'], 'they holitized me\n', '[CLS] nechflofriraqueh [SEP]')
+(['axnitechhodifa\n'], 'I do not chichaxate us\n', '[CLS] axnitechhodifa [SEP]')
+(['axtechcochopac\n'], 'he did not jixate us\n', '[CLS] axtechcochopac [SEP]')
+(['inquinkuhugaqueh\n'], 'you dimifrulated them\n', '[CLS] inquinkuhugaqueh [SEP]')
+(['timitzleefurah\n'], 'we kifakate you\n', '[CLS] timitzleefurah [SEP]')
+(['techmomoxa\n'], 'he fadirizes us\n', '[CLS] techmomoxa [SEP]')
+(['inmechjimigaraqueh\n'], 'you herated you\n', '[CLS] inmechjimigaraqueh [SEP]')
+(['nechcucah\n'], 'they dufate me\n', '[CLS] nechcucah [SEP]')
+(['nechfochulac\n'], 'he bobigated me\n', '[CLS] nechfochulac [SEP]')
+(['niquijonac\n'], 'I bonized him\n', '[CLS] niquijonac [SEP]')
+(['nitechgucukima\n'], 'I kaganize us\n', '[CLS] nitechgucukima [SEP]')
+(['nechhafluna\n'], 'he mooglupizes me\n', '[CLS] nechhafluna [SEP]')
+(['quibacokah\n'], 'they frochamize him\n', '[CLS] quibacokah [SEP]')
+(['quinmagojina\n'], 'he behakeebizes them\n', '[CLS] quinmagojina [SEP]')
+(['quimalotac\n'], 'he mootated him\n', '[CLS] quicomoomac [SEP]')
+(['quilofladidaqueh\n'], 'they jufrigorated him\n', '[CLS] quilofladidaqueh [SEP]')
+(['inquibodukah\n'], 'you flacomate him\n', '[CLS] tiquiboduka [SEP]')
+(['quiflochomac\n'], 'he froflubated him\n', '[CLS] quiflochomac [SEP]')
+(['axtiquiflufah\n'], 'we do not mafucize him\n', '[CLS] axtiquiflufah [SEP]')
+(['tiquinmeegopac\n'], 'you frocized them\n', '[CLS] inquinmeegopaqueh [SEP]')
+(['axintechglohibaqueh\n'], 'you did not mogodadize us\n', '[CLS] axintechglohibaqueh [SEP]')
+(['nechfochuta\n'], 'he fruhocizes me\n', '[CLS] nechfochuta [SEP]')
+(['tiquileera\n'], 'you keegize him\n', '[CLS] inquileerah [SEP]')
+(['niquinfoma\n'], 'I chifrudate them\n', '[CLS] niquinfoma [SEP]')
+(['axtinechfragunah\n'], 'we do not jokicate me\n', '[CLS] axtinechfragudicah [SEP]')
+(['quiluflobaqueh\n'], 'they jafrigized him\n', '[CLS] quiluflobaqueh [SEP]')
+(['nimechheflomoofac\n'], 'I gludaxized you\n', '[CLS] nimechheflomoofac [SEP]')
+(['nitechlabola\n'], 'I hulafize us\n', '[CLS] nitechlabola [SEP]')
+(['nitechchuflomac\n'], 'I kidogized us\n', '[CLS] nitechchuflomac [SEP]')
+(['techdabumana\n'], 'he flajupates us\n', '[CLS] techdabumana [SEP]')
+(['intechglafitaqueh\n'], 'you kukilated us\n', '[CLS] titechglafitac [SEP]')
+(['axtimechmeecah\n'], 'we do not kagolize you\n', '[CLS] axtimechglailah [SEP]')
+(['ninechfrugaloda\n'], 'I fufinize me\n', '[CLS] ninechfrugaloda [SEP]')
+(['timechfahakac\n'], 'you boglulized you\n', '[CLS] timitzfahakac [SEP]')
+(['techleedujocaqueh\n'], 'they dimafated us\n', '[CLS] techleeduxaqueh [SEP]')
+(['titechflira\n'], 'you gokujubate us\n', '[CLS] intechflirah [SEP]')
+(['mechfruglofah\n'], 'they bomate you\n', '[CLS] mitzfruglofah [SEP]')
+(['tinechchaflica\n'], 'you meexate me\n', '[CLS] innechchaflicah [SEP]')
+(['inquichuhubaqueh\n'], 'you hekochukated him\n', '[CLS] tiquichuhubac [SEP]')
+(['inquimamoraqueh\n'], 'you maminized him\n', '[CLS] inquimamoraqueh [SEP]')
+(['timechhodohigah\n'], 'we hechinate you\n', '[CLS] timechhodorah [SEP]')
+(['niquinlicac\n'], 'I fliladated them\n', '[CLS] niquinlicac [SEP]')
+(['mitzfomah\n'], 'they chifrudate you\n', '[CLS] mitzfomah [SEP]')
+(['techkiglubaqueh\n'], 'they foleegized us\n', '[CLS] techkiglubaqueh [SEP]')
+(['nitechmafloba\n'], 'I glologate us\n', '[CLS] nitechmafloba [SEP]')
+(['tiquijahimah\n'], 'we fadunate him\n', '[CLS] tiquijahimah [SEP]')
+(['mitzheleepaqueh\n'], 'they jidubedized you\n', '[CLS] mechheleepaqueh [SEP]')
+(['tiquikuladaqueh\n'], 'we glojofized him\n', '[CLS] tiquikuladaqueh [SEP]')
+(['inmitzlamamah\n'], 'you glacudize you\n', '[CLS] inmechchohemamah [SEP]')
+(['timitzmobicah\n'], 'we fikeetize you\n', '[CLS] timitzmobicah [SEP]')
+(['tiquinflifodaga\n'], 'you fopate them\n', '[CLS] inquinkujacah [SEP]')
+(['inmechlujodah\n'], 'you jubelize you\n', '[CLS] inmechlujodah [SEP]')
+(['innechfujifaqueh\n'], 'you meecotized me\n', '[CLS] innechfujifaqueh [SEP]')
+(['axninechdolapa\n'], 'I do not hameegate me\n', '[CLS] axninechdolapa [SEP]')
+(['axmechjubocah\n'], 'they do not fribochimate you\n', '[CLS] axmechjubocah [SEP]')
+(['nimitzfrura\n'], 'I dotize you\n', '[CLS] nimechfrura [SEP]')
+(['nimitzchata\n'], 'I fulize you\n', '[CLS] nimechchata [SEP]')
+(['inmitzkeekorah\n'], 'you cobodate you\n', '[CLS] inmechkeekodah [SEP]')
+(['tiquinflaxah\n'], 'we korate them\n', '[CLS] tiquinfluchigotah [SEP]')
+(['tiquigakichugah\n'], 'we chubichumate him\n', '[CLS] tiquigakichugah [SEP]')
+(['mechflagluxah\n'], 'they jogochucate you\n', '[CLS] mitzflagluxah [SEP]')
+(['titechfluchigotac\n'], 'you kafrabized us\n', '[CLS] titechfluchigotac [SEP]')
+(['mitzkeehefronah\n'], 'they hibinize you\n', '[CLS] mitzkeehefronah [SEP]')
+(['axintechheficah\n'], 'you do not hobodufate us\n', '[CLS] axtitechhefica [SEP]')
+(['axnechfluchigotah\n'], 'they do not kafrabize me\n', '[CLS] axnechfrilidah [SEP]')
+(['techmoofora\n'], 'he moojipizes us\n', '[CLS] techmoofora [SEP]')
+(['tiquiboleepaqueh\n'], 'we guchirated him\n', '[CLS] tiquiboleepaqueh [SEP]')
+(['axtitechhububala\n'], 'you do not flahapate us\n', '[CLS] axtitechhububala [SEP]')
+(['axniquichuhuba\n'], 'I do not hekochukate him\n', '[CLS] axniquichuhuba [SEP]')
+(['quifobapac\n'], 'he kudafated him\n', '[CLS] quifobapac [SEP]')
+(['tiquinjochutah\n'], 'we dubagate them\n', '[CLS] tiquinjochutah [SEP]')
+(['intechjalorah\n'], 'you chufrabate us\n', '[CLS] intechmafliculah [SEP]')
+(['quinheficaqueh\n'], 'they hobodufated them\n', '[CLS] quinheficaqueh [SEP]')
+(['innechflofriraqueh\n'], 'you lolaxated me\n', '[CLS] tinechflofrirac [SEP]')
+(['quimajurac\n'], 'he meekogated him\n', '[CLS] quimajurac [SEP]')
+(['quinbokaxaqueh\n'], 'they kodotated them\n', '[CLS] quinbokaxaqueh [SEP]')
+(['quinmeeguchida\n'], 'he mookoxates them\n', '[CLS] quinmogluflixa [SEP]')
+(['tiquinhofac\n'], 'you moogumated them\n', '[CLS] inquinhofaqueh [SEP]')
+(['niquinlikac\n'], 'I fradilized them\n', '[CLS] niquinlikac [SEP]')
+(['mitzglukeecac\n'], 'he hihonized you\n', '[CLS] mechglukeecac [SEP]')
+(['axinmitzchuflomah\n'], 'you do not kidogize you\n', '[CLS] axinmechchuflomah [SEP]')
+(['axniquinbeca\n'], 'I do not flufridize them\n', '[CLS] axniquinbeca [SEP]')
+(['inmitzjahimah\n'], 'you fadunate you\n', '[CLS] timitzjahima [SEP]')
+(['axtechchukufaqueh\n'], 'they did not bedocize us\n', '[CLS] axtechlitaqueh [SEP]')
+(['axtinechchuhubah\n'], 'we do not hekochukate me\n', '[CLS] axtinechchuhubah [SEP]')
+(['nimitzmoda\n'], 'I laleejofize you\n', '[CLS] nimitzkafloca [SEP]')
+(['axinquinglofumofah\n'], 'you do not moofladize them\n', '[CLS] axtiquinglofumofa [SEP]')
+(['axtimitzchakeelaqueh\n'], 'we did not dujudize you\n', '[CLS] axtimechchakeelaqueh [SEP]')
+(['mechchogunah\n'], 'they frobagate you\n', '[CLS] mechchogukah [SEP]')
+(['tinechmogoba\n'], 'you dokize me\n', '[CLS] tinechmogoba [SEP]')
+(['axtechjiglona\n'], 'he does not flofrimalate us\n', '[CLS] axtechjiglona [SEP]')
+(['inquidameefaqueh\n'], 'you friglacated him\n', '[CLS] inquidajumeebaqueh [SEP]')
+(['innechbigaqueh\n'], 'you kukeechimized me\n', '[CLS] tinechbigac [SEP]')
+(['techdopaqueh\n'], 'they goflunated us\n', '[CLS] techdopaqueh [SEP]')
+(['innechfrokachuxah\n'], 'you chalocize me\n', '[CLS] tinechfrokachuxa [SEP]')
+(['timitzfapac\n'], 'you godated you\n', '[CLS] timechfapac [SEP]')
+(['nimechgochadac\n'], 'I bajalobized you\n', '[CLS] nimechgochadac [SEP]')
+(['axmechhilopah\n'], 'they do not gafurate you\n', '[CLS] axmechhilopah [SEP]')
+(['mechkujacaqueh\n'], 'they hopated you\n', '[CLS] mechdolufrikaqueh [SEP]')
+(['axtinechlahupah\n'], 'we do not chabogate me\n', '[CLS] axtinechlahupah [SEP]')
+(['axtimitzchoflakafa\n'], 'you do not mibate you\n', '[CLS] axtimechchoflakafa [SEP]')
+(['axmitzchilipa\n'], 'he does not kanate you\n', '[CLS] axmitzchilipa [SEP]')
+(['nechflabafah\n'], 'they frogadate me\n', '[CLS] nechmatah [SEP]')
+(['tiquihemeenaqueh\n'], 'we falojucated him\n', '[CLS] tiquihemeenaqueh [SEP]')
+(['timechbacoka\n'], 'you frochamize you\n', '[CLS] inmechbacokah [SEP]')
+(['quimeegoka\n'], 'he jufakizes him\n', '[CLS] quimeegoka [SEP]')
+(['inmechkojilaqueh\n'], 'you flotated you\n', '[CLS] inmechkojilaqueh [SEP]')
+(['tiquinfrocotac\n'], 'you kijonized them\n', '[CLS] tiquinfrocotac [SEP]')
+(['tiquinfiglugaqueh\n'], 'we frulated them\n', '[CLS] tiquinfiglugaqueh [SEP]')
+(['inmechchukufah\n'], 'you bedocize you\n', '[CLS] inmechchukufah [SEP]')
+(['tiquiflana\n'], 'you gofize him\n', '[CLS] inquidalifah [SEP]')
+(['axinmitzdalolaqueh\n'], 'you did not glubuxize you\n', '[CLS] axintechdalolaqueh [SEP]')
+(['mitzbojajunaqueh\n'], 'they hekupated you\n', '[CLS] mechleekikaqueh [SEP]')
+(['timechflofricac\n'], 'you frubated you\n', '[CLS] timechflofricac [SEP]')
+(['quidaflofa\n'], 'he julamarates him\n', '[CLS] quidaflofa [SEP]')
+(['inquigaheraqueh\n'], 'you julacuxated him\n', '[CLS] inquigaheraqueh [SEP]')
+(['techbocaqueh\n'], 'they keefrudikated us\n', '[CLS] techbocaqueh [SEP]')
+(['axmitzleemeebac\n'], 'he did not globecogize you\n', '[CLS] axmitzleemeebac [SEP]')
+(['nechkichufac\n'], 'he fochatized me\n', '[CLS] nechkichufac [SEP]')
+(['innechchuhubaqueh\n'], 'you hekochukated me\n', '[CLS] innechchuhubaqueh [SEP]')
+(['timitzhucharac\n'], 'you bochotized you\n', '[CLS] timechhucharac [SEP]')
+(['nimitzmidocac\n'], 'I lilufized you\n', '[CLS] nimitzmidocac [SEP]')
+(['inquinkabubicaqueh\n'], 'you domixated them\n', '[CLS] inquinkabubicaqueh [SEP]')
+(['axtimitzjumomeemah\n'], 'we do not chilize you\n', '[CLS] axtimitzjumomeemah [SEP]')
+(['nechkeehefronac\n'], 'he hibinized me\n', '[CLS] nechkeehefronac [SEP]')
+(['titechchibixaqueh\n'], 'we gakeefated us\n', '[CLS] titechchibixaqueh [SEP]')
+(['techfiglabitaqueh\n'], 'they leelofated us\n', '[CLS] techfiglabitaqueh [SEP]')
+(['titechflagluxa\n'], 'you jogochucate us\n', '[CLS] intechflagluxah [SEP]')
+(['quinchujofaqueh\n'], 'they ligupized them\n', '[CLS] quinchujofaqueh [SEP]')
+(['mitzleemeeba\n'], 'he globecogizes you\n', '[CLS] mitzleemeeba [SEP]')
+(['tinechmoomac\n'], 'you chukufized me\n', '[CLS] tinechglufac [SEP]')
+(['inquiglufah\n'], 'you jalurate him\n', '[CLS] inquigluxah [SEP]')
+(['tiquigokaraqueh\n'], 'we cuhelized him\n', '[CLS] tiquigokaraqueh [SEP]')
+(['axtitechkilijonac\n'], 'you did not jojogize us\n', '[CLS] axintechkilijonaqueh [SEP]')
+(['axtechdokaluba\n'], 'he does not mookeebufate us\n', '[CLS] axtechdoka [SEP]')
+(['axquinbefada\n'], 'he does not michaleemize them\n', '[CLS] axquinbefada [SEP]')
+(['tinechmeegopaqueh\n'], 'we frocized me\n', '[CLS] tinechmeegopaqueh [SEP]')
+(['quidiflokah\n'], 'they glomicize him\n', '[CLS] quidiflokah [SEP]')
+(['nimitzfromanac\n'], 'I bofrapized you\n', '[CLS] nimechkahorac [SEP]')
+(['quinfraleefa\n'], 'he gubacizes them\n', '[CLS] quinflaflufraba [SEP]')
+(['inquiflafopah\n'], 'you cocate him\n', '[CLS] tiquifrokomada [SEP]')
+(['quikojilah\n'], 'they flotate him\n', '[CLS] quikojilah [SEP]')
+(['timitzmogluda\n'], 'you cogucize you\n', '[CLS] timechmogluda [SEP]')
+(['inmechmoodofah\n'], 'you frurize you\n', '[CLS] inmechmoodofah [SEP]')
+(['tiquinguficaqueh\n'], 'we flomokized them\n', '[CLS] tiquinguficaqueh [SEP]')
+(['axninechbifrufufa\n'], 'I do not bechibegate me\n', '[CLS] axninechbifrufufa [SEP]')
+(['nitechkilijonac\n'], 'I jojogized us\n', '[CLS] nitechkilijonac [SEP]')
+(['timitzgluminac\n'], 'you julaculated you\n', '[CLS] inmechmeegocaqueh [SEP]')
+(['timechflabifac\n'], 'you dufrimized you\n', '[CLS] inmechflabifaqueh [SEP]')
+(['quihafacac\n'], 'he higlapized him\n', '[CLS] quihafacac [SEP]')
+(['mitzfrumoxaqueh\n'], 'they bibutated you\n', '[CLS] mitzfrumoxaqueh [SEP]')
+(['nitechbufrabunac\n'], 'I bajipized us\n', '[CLS] nitechbufrabunac [SEP]')
+(['techgoleeba\n'], 'he bafifromizes us\n', '[CLS] techgoleeba [SEP]')
+(['mechfikac\n'], 'he glomotated you\n', '[CLS] mechfikac [SEP]')
+(['nechcuchanah\n'], 'they gofate me\n', '[CLS] nechcuchanah [SEP]')
+(['tinechkeefloda\n'], 'you frubohubate me\n', '[CLS] innechkeeflodah [SEP]')
+(['techdimala\n'], 'he buchokizes us\n', '[CLS] techdimala [SEP]')
+(['mitzfobapaqueh\n'], 'they kudafated you\n', '[CLS] mechfobapaqueh [SEP]')
+(['quinkuhugah\n'], 'they dimifrulate them\n', '[CLS] quinkuhugah [SEP]')
+(['axmitzfladobomac\n'], 'he did not bocudize you\n', '[CLS] axmitzfladobomac [SEP]')
+(['quijifaqueh\n'], 'they hochidated him\n', '[CLS] quijifah [SEP]')
+(['tinechdafrakac\n'], 'you dagarated me\n', '[CLS] innechdabiraqueh [SEP]')
+(['titechchagurac\n'], 'you lacated us\n', '[CLS] intechchaguraqueh [SEP]')
+(['niquibicac\n'], 'I fadafated him\n', '[CLS] niquimomoxac [SEP]')
+(['axtimitzfibikah\n'], 'we do not keefaflaxize you\n', '[CLS] axtimechfibikah [SEP]')
+(['intechfrihefluxaqueh\n'], 'you hudorized us\n', '[CLS] intechfrihefluxaqueh [SEP]')
+(['quihaflunah\n'], 'they mooglupize him\n', '[CLS] quihaflunah [SEP]')
+(['titechheflomoofah\n'], 'we gludaxize us\n', '[CLS] titechheflomoofaqueh [SEP]')
+(['quihoflifaqueh\n'], 'they frobekized him\n', '[CLS] quihoflifaqueh [SEP]')
+(['axquinjufah\n'], 'they do not chagudate them\n', '[CLS] axquinjufah [SEP]')
+(['niquiflokidupa\n'], 'I bumoocutate him\n', '[CLS] niquiflokidupa [SEP]')
+(['niquifridotac\n'], 'I horated him\n', '[CLS] niquibfridotac [SEP]')
+(['techchuhubac\n'], 'he hekochukated us\n', '[CLS] techchuhubac [SEP]')
+(['tinechfrikoxaqueh\n'], 'we jihegized me\n', '[CLS] tinechfrikoxaqueh [SEP]')
+(['inmechbigaqueh\n'], 'you kukeechimized you\n', '[CLS] inmitzbigaqueh [SEP]')
+(['axniquincohojuda\n'], 'I do not hibatate them\n', '[CLS] axniquingajada [SEP]')
+(['tiquinmeedocah\n'], 'we mofracate them\n', '[CLS] tiquinmeedocah [SEP]')
+(['mechlugac\n'], 'he moolatized you\n', '[CLS] mechluga [SEP]')
+(['mechbedah\n'], 'they coluhupize you\n', '[CLS] mechbedah [SEP]')
+(['axinquinkojubitaqueh\n'], 'you did not himeerize them\n', '[CLS] axtiquinkojubitac [SEP]')
+(['tiquinmoodofac\n'], 'you lohexized them\n', '[CLS] tiquinmoodofac [SEP]')
+(['axniquinkibonac\n'], 'I did not licuxate them\n', '[CLS] axniquinkibonac [SEP]')
+(['axnimechflochoma\n'], 'I do not froflubate you\n', '[CLS] axnimechflochoma [SEP]')
+(['inquikilijonah\n'], 'you jojogize him\n', '[CLS] tiquikilijona [SEP]')
+(['axmechglogokaqueh\n'], 'they did not figonate you\n', '[CLS] axmechglogokaqueh [SEP]')
+(['tinechmifurah\n'], 'we jaxize me\n', '[CLS] tinechmifurah [SEP]')
+(['mechjahimac\n'], 'he fadunated you\n', '[CLS] mitzjahimac [SEP]')
+(['axtechglokeefudaqueh\n'], 'they did not jibagate us\n', '[CLS] axtechglokeefudaqueh [SEP]')
+(['inmitzhofah\n'], 'you moogumate you\n', '[CLS] timechhofa [SEP]')
+(['ninechkaglupa\n'], 'I frahupate me\n', '[CLS] ninechkaglupa [SEP]')
+(['techgladilah\n'], 'they bibapize us\n', '[CLS] techgladilah [SEP]')
+(['nitechmolura\n'], 'I gloglularate us\n', '[CLS] nitechmolura [SEP]')
+(['nimechmobafrila\n'], 'I fabadize you\n', '[CLS] nimechmobafrila [SEP]')
+(['timechhemina\n'], 'you faficate you\n', '[CLS] inmitzheminah [SEP]')
+(['inquibefucaqueh\n'], 'you flufripated him\n', '[CLS] inquichoxaqueh [SEP]')
+(['axtimitzdibenaqueh\n'], 'we did not floglulate you\n', '[CLS] axtimechdibenaqueh [SEP]')
+(['quinmooforac\n'], 'he moojipized them\n', '[CLS] quinmooforac [SEP]')
+(['mechkokafuka\n'], 'he meehokizes you\n', '[CLS] mechkoka [SEP]')
+(['axtitechchoflakifa\n'], 'you do not duglulize us\n', '[CLS] axintechchoflakifah [SEP]')
+(['mitzchadarah\n'], 'they lugize you\n', '[CLS] mitzchadarah [SEP]')
+(['tinechhihuma\n'], 'you flugaxate me\n', '[CLS] innechhihumah [SEP]')
+(['timechglalikaqueh\n'], 'we flohichipated you\n', '[CLS] timitzglalikaqueh [SEP]')
+(['quijafroxa\n'], 'he hamizes him\n', '[CLS] quijafroxa [SEP]')
+(['tiquinfiglugah\n'], 'we frulate them\n', '[CLS] tiquinfiglugah [SEP]')
+(['tinechkuleefaqueh\n'], 'we golated me\n', '[CLS] tinechkuleefaqueh [SEP]')
+(['tiquinkeechakah\n'], 'we keejacate them\n', '[CLS] tiquinkeechakah [SEP]')
+(['innechkogluglagah\n'], 'you jufromokize me\n', '[CLS] innechkogluglagah [SEP]')
+(['tiquibicurac\n'], 'you hakized him\n', '[CLS] inquibicuraqueh [SEP]')
+(['quijuchuda\n'], 'he keebigates him\n', '[CLS] quijuchuda [SEP]')
+(['tiquinfobaqueh\n'], 'we meefridated them\n', '[CLS] tiquinfobaqueh [SEP]')
+(['timechchobecopac\n'], 'you dabagokated you\n', '[CLS] inmitzchobecopaqueh [SEP]')
+(['axtinechbiloda\n'], 'you do not chifate me\n', '[CLS] axtinechbiloda [SEP]')
+(['nimitzfumigac\n'], 'I glubidated you\n', '[CLS] nimechfumigac [SEP]')
+(['axinmitzlifoxaqueh\n'], 'you did not chififize you\n', '[CLS] axinmechlifoxaqueh [SEP]')
+(['axmechlajogaqueh\n'], 'they did not fridurize you\n', '[CLS] axmitzjaxaqueh [SEP]')
+(['mechjumomeemah\n'], 'they chilize you\n', '[CLS] mitzjumomeemah [SEP]')
+(['mechkuhugac\n'], 'he dimifrulated you\n', '[CLS] mitzkuhugac [SEP]')
+(['titechfakigaqueh\n'], 'we liflirated us\n', '[CLS] titechfakigaqueh [SEP]')
+(['mechchuhuba\n'], 'he hekochukates you\n', '[CLS] mitzchuhuba [SEP]')
+(['ninechluchoxac\n'], 'I fuflorated me\n', '[CLS] ninechluchoxac [SEP]')
+(['titechkojubitaqueh\n'], 'we himeerized us\n', '[CLS] titechkojubitaqueh [SEP]')
+(['axtimitzmohekukaqueh\n'], 'we did not bofanate you\n', '[CLS] axtimechfrodufaqueh [SEP]')
+(['tiquincuframac\n'], 'you chiflafated them\n', '[CLS] inquincuframaqueh [SEP]')
+(['mechlibefaqueh\n'], 'they dijohodated you\n', '[CLS] mechlibefaqueh [SEP]')
+(['axquinbajiga\n'], 'he does not hahofate them\n', '[CLS] axquinbajiga [SEP]')
+(['nechfluchigota\n'], 'he kafrabizes me\n', '[CLS] nechflahefa [SEP]')
+(['tinechfruchinac\n'], 'you guflaxized me\n', '[CLS] tinechfruchinac [SEP]')
+(['inmitzmeejuglomah\n'], 'you bidize you\n', '[CLS] inmechmeejuglomah [SEP]')
+(['mechmolulaqueh\n'], 'they meetated you\n', '[CLS] mechmolulaqueh [SEP]')
+(['ninechhigura\n'], 'I gaflikize me\n', '[CLS] ninechhigura [SEP]')
+(['timitzglada\n'], 'you logucize you\n', '[CLS] inmechgladah [SEP]')
+(['inmitzmoodagah\n'], 'you cuglogate you\n', '[CLS] timechmoodaga [SEP]')
+(['axtiquindidaga\n'], 'you do not kicubize them\n', '[CLS] axinquindidagah [SEP]')
+(['tiquikogluglagah\n'], 'we jufromokize him\n', '[CLS] tiquikogluglagah [SEP]')
+(['tiquinfrakola\n'], 'you flogujoxate them\n', '[CLS] inquinfrakolah [SEP]')
+(['quihaflunaqueh\n'], 'they mooglupized him\n', '[CLS] quihaflunaqueh [SEP]')
+(['axnitechbita\n'], 'I do not facomize us\n', '[CLS] axnitechbita [SEP]')
+(['nimechmofota\n'], 'I fokize you\n', '[CLS] nimechmofota [SEP]')
+(['quinflochomaqueh\n'], 'they froflubated them\n', '[CLS] quinflochomaqueh [SEP]')
+(['axniquiflafufac\n'], 'I did not chilirize him\n', '[CLS] axniquiflafufac [SEP]')
+(['axnimitzfrokachuxac\n'], 'I did not chalocize you\n', '[CLS] axnimitzfrokachuxac [SEP]')
+(['axtiquinbejafaqueh\n'], 'we did not kitate them\n', '[CLS] axtiquinkijadaqueh [SEP]')
+(['axtiquimolukac\n'], 'you did not meefate him\n', '[CLS] axinquimolukaqueh [SEP]')
+(['niquihafuma\n'], 'I fitize him\n', '[CLS] niquihafuma [SEP]')
+(['nitechbofubefa\n'], 'I flabafate us\n', '[CLS] nitechbofubefa [SEP]')
+(['inquikeelipaqueh\n'], 'you faflucized him\n', '[CLS] tiquikeelipac [SEP]')
+(['axquihuflanah\n'], 'they do not fladafate him\n', '[CLS] axquihuflanah [SEP]')
+(['tiquihecokah\n'], 'we koglucize him\n', '[CLS] tiquihecokah [SEP]')
+(['niquingucukima\n'], 'I kaganize them\n', '[CLS] niquingucukima [SEP]')
+(['ninechleekeefapac\n'], 'I bafradaxized me\n', '[CLS] ninechleekeefapac [SEP]')
+(['quiluchoxac\n'], 'he fuflorated him\n', '[CLS] quiluchoxac [SEP]')
+(['nechbokaxah\n'], 'they kodotate me\n', '[CLS] nechbokaxah [SEP]')
+(['inquinfibikah\n'], 'you keefaflaxize them\n', '[CLS] tiquinfibika [SEP]')
+(['quinchoflakifah\n'], 'they duglulize them\n', '[CLS] quinchoflakifah [SEP]')
+(['inquindufripah\n'], 'you globalidize them\n', '[CLS] tiquindufripa [SEP]')
+(['tinechflofagah\n'], 'we huglulize me\n', '[CLS] tinechflofamah [SEP]')
+(['techhifocac\n'], 'he moofrutized us\n', '[CLS] techhifocac [SEP]')
+(['axmitzlagakac\n'], 'he did not gojucate you\n', '[CLS] axmechlagakac [SEP]')
+(['techheluxa\n'], 'he culotates us\n', '[CLS] techheluxa [SEP]')
+(['tiquihuflana\n'], 'you meeglumate him\n', '[CLS] tiquihuflana [SEP]')
+(['axtechhofa\n'], 'he does not moogumate us\n', '[CLS] axtechhofa [SEP]')
+(['axtechflagluxac\n'], 'he did not jogochucate us\n', '[CLS] axtechflagluxac [SEP]')
+(['axniquinchoga\n'], 'I do not chigapate them\n', '[CLS] axniquinchoga [SEP]')
+(['titechluchoxah\n'], 'we fuflorate us\n', '[CLS] titechluchoxah [SEP]')
+(['timechglochifaqueh\n'], 'we keelated you\n', '[CLS] timechmajufaqueh [SEP]')
+(['axtiquinfobaqueh\n'], 'we did not meefridate them\n', '[CLS] axtiquinfobaqueh [SEP]')
+(['tinechmoocac\n'], 'you hofrixized me\n', '[CLS] innechmoocaqueh [SEP]')
+(['nechboleemac\n'], 'he jamated me\n', '[CLS] nechboleemac [SEP]')
+(['timitzglafita\n'], 'you kukilate you\n', '[CLS] inmitzglafitah [SEP]')
+(['inquimooleechinaqueh\n'], 'you behufated him\n', '[CLS] tiquimooleechinac [SEP]')
+(['axtimitzfrokachuxa\n'], 'you do not chalocize you\n', '[CLS] axinmechfrokachuxah [SEP]')
+(['intechbifrufufah\n'], 'you bechibegate us\n', '[CLS] intechbifrufufah [SEP]')
+(['ninechfrimihemac\n'], 'I frudized me\n', '[CLS] ninechfrimihemac [SEP]')
+(['inquifrocotaqueh\n'], 'you kijonized him\n', '[CLS] inquifrocotaqueh [SEP]')
+(['mitzkalifah\n'], 'they doflogize you\n', '[CLS] mechkalifah [SEP]')
+(['intechfrijoxaqueh\n'], 'you bulated us\n', '[CLS] intechfrijoxaqueh [SEP]')
+(['niquijuta\n'], 'I milukate him\n', '[CLS] niquijuta [SEP]')
+(['tinechmogludac\n'], 'you cogucized me\n', '[CLS] innechmogludaqueh [SEP]')
+(['intechdolapah\n'], 'you hameegate us\n', '[CLS] intechrurah [SEP]')
+(['axniquinchichama\n'], 'I do not difricate them\n', '[CLS] axniquinchichama [SEP]')
+(['tiquinloborac\n'], 'you lihutized them\n', '[CLS] tiquinloborac [SEP]')
+(['nimitzjokafac\n'], 'I leeglofrinized you\n', '[CLS] nimechdukichocac [SEP]')
+(['tinechjumomah\n'], 'we difranate me\n', '[CLS] tinechjumomah [SEP]')
+(['timechmoodagah\n'], 'we cuglogate you\n', '[CLS] timechmoodagah [SEP]')
+(['niquinheminac\n'], 'I faficated them\n', '[CLS] niquinheminac [SEP]')
+(['techlochugah\n'], 'they lobudize us\n', '[CLS] techlochugah [SEP]')
+(['mitzhalaleexac\n'], 'he kificated you\n', '[CLS] mitzmoohoxac [SEP]')
+(['axinquinchogaqueh\n'], 'you did not chigapate them\n', '[CLS] axtiquinchogac [SEP]')
+(['inquinlamitaqueh\n'], 'you kubated them\n', '[CLS] tiquinlamitac [SEP]')
+(['tiquicomiga\n'], 'you halagate him\n', '[CLS] inquicomigah [SEP]')
+(['axinquingubah\n'], 'you do not frogize them\n', '[CLS] axinquinleemitah [SEP]')
+(['niquinhucharac\n'], 'I bochotized them\n', '[CLS] niquinhucharac [SEP]')
+(['quinmoodagac\n'], 'he cuglogated them\n', '[CLS] quinmoodagac [SEP]')
+(['tiquibihuma\n'], 'you jofize him\n', '[CLS] inquijimaligah [SEP]')
+(['timechlikaqueh\n'], 'we fradilized you\n', '[CLS] timitzlikaqueh [SEP]')
+(['nechflabilifa\n'], 'he flijabolates me\n', '[CLS] nechflabilifa [SEP]')
+(['axnechfaglukac\n'], 'he did not chubukate me\n', '[CLS] axnechfaglukac [SEP]')
+(['mechglugurac\n'], 'he bakirated you\n', '[CLS] mitzglugufac [SEP]')
+(['nimitzcomoomac\n'], 'I modated you\n', '[CLS] nimechcomoomac [SEP]')
+(['nitechmomirac\n'], 'I habirized us\n', '[CLS] nitechmomira [SEP]')
+(['titechchatac\n'], 'you fulized us\n', '[CLS] intechchataqueh [SEP]')
+(['mechmafliculah\n'], 'they frufrotize you\n', '[CLS] mitzmafliculah [SEP]')
+(['timechhehamac\n'], 'you kakapated you\n', '[CLS] inmechhehamaqueh [SEP]')
+(['tiquifluga\n'], 'you kiflidize him\n', '[CLS] inquifluglokah [SEP]')
+(['nechkeemaqueh\n'], 'they flafinized me\n', '[CLS] nechkeemaqueh [SEP]')
+(['nechglofumofac\n'], 'he moofladized me\n', '[CLS] nechglofumofac [SEP]')
+(['tiquichogac\n'], 'you jobemipized him\n', '[CLS] inquichogaqueh [SEP]')
+(['mitzbajiga\n'], 'he hahofates you\n', '[CLS] mitzbajiga [SEP]')
+(['axtimechflokidupah\n'], 'we do not bumoocutate you\n', '[CLS] axtimechflokidupah [SEP]')
+(['nitechbana\n'], 'I difugate us\n', '[CLS] nitechbana [SEP]')
+(['nechliflima\n'], 'he hidirates me\n', '[CLS] nechliflima [SEP]')
+(['mitzdomoocac\n'], 'he leechodudized you\n', '[CLS] mechdomoocac [SEP]')
+(['inquinkeechobaqueh\n'], 'you frakized them\n', '[CLS] tiquinkeechobac [SEP]')
+(['nechglomimeepah\n'], 'they buhokate me\n', '[CLS] nechgloxah [SEP]')
+(['axinmitzjokixaqueh\n'], 'you did not dakate you\n', '[CLS] axtimitzjokixac [SEP]')
+(['axniquifrabapac\n'], 'I did not cobalate him\n', '[CLS] axniquicokac [SEP]')
+(['tinechflabilifa\n'], 'you flijabolate me\n', '[CLS] innechflabilifah [SEP]')
+(['tinechfluka\n'], 'you kuchocate me\n', '[CLS] innechfluflulah [SEP]')
+(['tinechfaflicac\n'], 'you bujucated me\n', '[CLS] innechfaflicaqueh [SEP]')
+(['titechjuda\n'], 'you meehimize us\n', '[CLS] titechjuda [SEP]')
+(['nimitzdihitac\n'], 'I frihecoxized you\n', '[CLS] nimitzdihitac [SEP]')
+(['mechmiglaxac\n'], 'he fakochutized you\n', '[CLS] mitzduharac [SEP]')
+(['axtechchulagaqueh\n'], 'they did not chuflimakize us\n', '[CLS] axtechchulagaqueh [SEP]')
+(['timechgochadac\n'], 'you bajalobized you\n', '[CLS] timechgochadac [SEP]')
+(['tiquijicharaqueh\n'], 'we guchachalated him\n', '[CLS] tiquijicaqueh [SEP]')
+(['mechbibikah\n'], 'they damate you\n', '[CLS] mechkafrinah [SEP]')
+(['axtechgumoomeeka\n'], 'he does not hemate us\n', '[CLS] axtechgubica [SEP]')
+(['axniquinkeehefronac\n'], 'I did not hibinize them\n', '[CLS] axniquinkeehefronac [SEP]')
+(['nimechchojalac\n'], 'I gladarated you\n', '[CLS] nimechdabirac [SEP]')
+(['timitzchoraqueh\n'], 'we flocucated you\n', '[CLS] timechchorac [SEP]')
+(['quimobafrila\n'], 'he fabadizes him\n', '[CLS] quimobafrila [SEP]')
+(['tiquinfaxaqueh\n'], 'we dagluxated them\n', '[CLS] tiquinfaxaqueh [SEP]')
+(['axtinechluchoxa\n'], 'you do not fuflorate me\n', '[CLS] axinnechluchoxah [SEP]')
+(['techluchoxah\n'], 'they fuflorate us\n', '[CLS] techluchoxah [SEP]')
+(['tiquinmoochupaqueh\n'], 'we kukuxated them\n', '[CLS] tiquinmookanaqueh [SEP]')
+(['timitzfibika\n'], 'you keefaflaxize you\n', '[CLS] timitzfibika [SEP]')
+(['timechdaflofah\n'], 'we julamarate you\n', '[CLS] timitzdaflofah [SEP]')
+(['tiquinfoflofucah\n'], 'we lokupate them\n', '[CLS] tiquinfacucurah [SEP]')
+(['axquinfrojilac\n'], 'he did not frimomate them\n', '[CLS] axquinfrojigac [SEP]')
+(['tiquikeefirah\n'], 'we baglokize him\n', '[CLS] tiquikeefirah [SEP]')
+(['niquibumeepa\n'], 'I dafrubize him\n', '[CLS] niquibumeepa [SEP]')
+(['mechdifura\n'], 'he hofrubizes you\n', '[CLS] mechdifura [SEP]')
+(['mitzjulafrika\n'], 'he lojucizes you\n', '[CLS] mechjulafrika [SEP]')
+(['niquinglahuflabac\n'], 'I fridudated them\n', '[CLS] niquinglahuflabac [SEP]')
+(['axtiquinjacofuda\n'], 'you do not lolize them\n', '[CLS] axinquinglufrirah [SEP]')
+(['mitzligufloda\n'], 'he labuxates you\n', '[CLS] mitzligufloda [SEP]')
+(['timechcochopaqueh\n'], 'we jixated you\n', '[CLS] timechcochopaqueh [SEP]')
+(['techlichubaqueh\n'], 'they jimated us\n', '[CLS] techlichubaqueh [SEP]')
+(['timechhachibifaqueh\n'], 'we chijimokated you\n', '[CLS] timitzlibaqueh [SEP]')
+(['tinechfochulah\n'], 'we fragize me\n', '[CLS] tinechfochulah [SEP]')
+(['niquinbokaxac\n'], 'I kodotated them\n', '[CLS] niquinbokaxac [SEP]')
+(['tiquinbacoka\n'], 'you frochamize them\n', '[CLS] tiquinbacoka [SEP]')
+(['tiquilafaraqueh\n'], 'we hihalaxized him\n', '[CLS] tiquikobaqueh [SEP]')
+(['ninechfika\n'], 'I glomotate me\n', '[CLS] ninechfika [SEP]')
+(['innechlomogah\n'], 'you glojaflupize me\n', '[CLS] innechlomogah [SEP]')
+(['axmechjama\n'], 'he does not hudifate you\n', '[CLS] axmechjama [SEP]')
+(['axtimitzdabac\n'], 'you did not fichamocate you\n', '[CLS] axtimitzdabah [SEP]')
+(['titechhaflunah\n'], 'we mooglupize us\n', '[CLS] titechhaflunah [SEP]')
+(['titechkeehefronaqueh\n'], 'we hibinized us\n', '[CLS] titechkeehefronaqueh [SEP]')
+(['inmitzjafropaqueh\n'], 'you bofrimized you\n', '[CLS] timechjafropac [SEP]')
+(['timechflojiflana\n'], 'you cobubate you\n', '[CLS] inmechflojiflanah [SEP]')
+(['ninechjiglonac\n'], 'I flofrimalated me\n', '[CLS] ninechjiglonac [SEP]')
+(['axtinechfifrofa\n'], 'you do not mogofupate me\n', '[CLS] axinnechfifrofah [SEP]')
+(['axtechkufolibac\n'], 'he did not gluchorate us\n', '[CLS] axtechkufocac [SEP]')
+(['nechlibucugac\n'], 'he hahogized me\n', '[CLS] nechlibucugac [SEP]')
+(['techbodaqueh\n'], 'they kaglalized us\n', '[CLS] techbodaqueh [SEP]')
+(['tiquinjafropa\n'], 'you bofrimize them\n', '[CLS] inquinjafropah [SEP]')
+(['nitechkeehefronac\n'], 'I hibinized us\n', '[CLS] nitechkeehefronac [SEP]')
+(['axtiquiflahaxa\n'], 'you do not goleenize him\n', '[CLS] axinquiflahaxah [SEP]')
+(['axtechdixah\n'], 'they do not lachufize us\n', '[CLS] axtechdixah [SEP]')
+(['timechfomaqueh\n'], 'we chifrudated you\n', '[CLS] timechfomaqueh [SEP]')
+(['inquibamah\n'], 'you leefufate him\n', '[CLS] tiquibama [SEP]')
+(['nimitzkilijona\n'], 'I jojogize you\n', '[CLS] nimitzkilijona [SEP]')
+(['axinmitzbididaqueh\n'], 'you did not glabagize you\n', '[CLS] axinmechkahoraqueh [SEP]')
+(['quichabaqueh\n'], 'they leefladated him\n', '[CLS] quichabaqueh [SEP]')
+(['nechmookana\n'], 'he meelucizes me\n', '[CLS] nechmookana [SEP]')
+(['axniquinjiglonac\n'], 'I did not flofrimalate them\n', '[CLS] axniquinjiglonac [SEP]')
+(['mechkirah\n'], 'they bihudize you\n', '[CLS] mechkirah [SEP]')
+(['nitechjafropac\n'], 'I bofrimized us\n', '[CLS] nitechjafropac [SEP]')
+(['timitzlolufac\n'], 'you juhojorated you\n', '[CLS] inmechlolufaqueh [SEP]')
+(['titechmomabac\n'], 'you jafribated us\n', '[CLS] intechmomabaqueh [SEP]')
+(['nimechlibedac\n'], 'I kokeemated you\n', '[CLS] nimitzlibedac [SEP]')
+(['timechfruhuca\n'], 'you flocodolize you\n', '[CLS] inmechfruhucah [SEP]')
+(['nechbachukah\n'], 'they gufimeedate me\n', '[CLS] nechbachutaqueh [SEP]')
+(['axnimechmafabac\n'], 'I did not kuflikize you\n', '[CLS] axnimechkofrakac [SEP]')
+(['quingadafa\n'], 'he keemikeemates them\n', '[CLS] quingadafa [SEP]')
+(['titechdaxa\n'], 'you gukate us\n', '[CLS] titechdaxa [SEP]')
+(['mechcochopaqueh\n'], 'they jixated you\n', '[CLS] mitzcochopaqueh [SEP]')
+(['inquilatah\n'], 'you gudilate him\n', '[CLS] inquilatah [SEP]')
+(['techfomac\n'], 'he chifrudated us\n', '[CLS] techfomac [SEP]')
+(['timechbihaglakac\n'], 'you lumocized you\n', '[CLS] inmechfrihafaqueh [SEP]')
+(['innechflochomaqueh\n'], 'you froflubated me\n', '[CLS] innechflochomaqueh [SEP]')
+(['inmechfobaqueh\n'], 'you meefridated you\n', '[CLS] timechfobac [SEP]')
+(['timitzglogokac\n'], 'you figonated you\n', '[CLS] inmitzglogokaqueh [SEP]')
+(['nechmohufaqueh\n'], 'they gagobipized me\n', '[CLS] nechmohufaqueh [SEP]')
+(['mechliligocah\n'], 'they gobukocate you\n', '[CLS] mitzliligah [SEP]')
+(['tinechglaflufah\n'], 'we kagize me\n', '[CLS] tinechmahodah [SEP]')
+(['axmechlafubafa\n'], 'he does not limibate you\n', '[CLS] axmitzlafuba [SEP]')
+(['axniquinhilopa\n'], 'I do not gafurate them\n', '[CLS] axniquinhilopa [SEP]')
+(['timitzfrurah\n'], 'we dotize you\n', '[CLS] timechfrurah [SEP]')
+(['axtinechbemicofah\n'], 'we do not frodubize me\n', '[CLS] axtinechmaflulah [SEP]')
+(['timechkoxah\n'], 'we dalijufate you\n', '[CLS] timitzkocokah [SEP]')
+(['axquinhuheflida\n'], 'he does not fukaxize them\n', '[CLS] axquinhujoba [SEP]')
+(['nimitzhuta\n'], 'I hagukate you\n', '[CLS] nimitzdabah [SEP]')
+(['tiquikilijonah\n'], 'we jojogize him\n', '[CLS] tiquikilijonah [SEP]')
+(['nitechlomota\n'], 'I flumoorize us\n', '[CLS] nitechchohefa [SEP]')
+(['timitzfrafibapac\n'], 'you chitated you\n', '[CLS] inmitzgloflunaqueh [SEP]')
+(['innechmoonaqueh\n'], 'you bolized me\n', '[CLS] tinechfucukac [SEP]')
+(['axtimitzfrunac\n'], 'you did not keegufronize you\n', '[CLS] axtimitzfrunaqueh [SEP]')
+(['nitechlichubac\n'], 'I jimated us\n', '[CLS] nitechlichubac [SEP]')
+(['axtechdalola\n'], 'he does not glubuxize us\n', '[CLS] axtechdalola [SEP]')
+(['nitechjafropa\n'], 'I bofrimize us\n', '[CLS] nitechjafropa [SEP]')
+(['timitzbihanaqueh\n'], 'we fofromated you\n', '[CLS] timechfrofaqueh [SEP]')
+(['axniquinhadokac\n'], 'I did not lamicate them\n', '[CLS] axniquinhadokac [SEP]')
+(['timitzmeegoflolah\n'], 'we lifize you\n', '[CLS] timitzmeegoflolah [SEP]')
+(['tinechflabilifah\n'], 'we flijabolate me\n', '[CLS] tinechflabilifah [SEP]')
+(['quimobicac\n'], 'he fikeetized him\n', '[CLS] quimobicac [SEP]')
+(['mitzbuloxaqueh\n'], 'they flaflugated you\n', '[CLS] mitzdopaqueh [SEP]')
+(['niquinjijomoodac\n'], 'I lulated them\n', '[CLS] niquinjimijulac [SEP]')
+(['tinechlahupah\n'], 'we chabogate me\n', '[CLS] tinechlahupah [SEP]')
+(['inmitzmeeflokah\n'], 'you bimirize you\n', '[CLS] inmechmeechatah [SEP]')
+(['niquinfamileexac\n'], 'I flahedated them\n', '[CLS] niquinfamileexa [SEP]')
+(['quikuhugaqueh\n'], 'they dimifrulated him\n', '[CLS] quikuhugaqueh [SEP]')
+(['axtiquinkikabaqueh\n'], 'we did not fraflikimate them\n', '[CLS] axtiquinfolataqueh [SEP]')
+(['titechbigaqueh\n'], 'we kukeechimized us\n', '[CLS] titechbigaqueh [SEP]')
+(['axnimitzkabubica\n'], 'I do not domixate you\n', '[CLS] axnimechkabubica [SEP]')
+(['techmomoxac\n'], 'he fadirized us\n', '[CLS] techmomoxac [SEP]')
+(['mitzducac\n'], 'he keehufized you\n', '[CLS] mechducac [SEP]')
+(['nechmeekaga\n'], 'he hudilizes me\n', '[CLS] nechmeekaga [SEP]')
+(['inquinkoflidaqueh\n'], 'you jonized them\n', '[CLS] inquinflogaqueh [SEP]')
+(['tinechjumomaqueh\n'], 'we difranated me\n', '[CLS] tinechjumomaqueh [SEP]')
+(['quincutaqueh\n'], 'they flinized them\n', '[CLS] quincutaqueh [SEP]')
+(['nitechmomoxac\n'], 'I fadirized us\n', '[CLS] nitechmomoxac [SEP]')
+(['quihadokac\n'], 'he lamicated him\n', '[CLS] quihadokac [SEP]')
+(['inmechbulicah\n'], 'you chahaglumate you\n', '[CLS] inmitzbulicah [SEP]')
+(['mitzjudogah\n'], 'they glufrurate you\n', '[CLS] mitzjudoganah [SEP]')
+(['niquiglahuflaba\n'], 'I fridudate him\n', '[CLS] niquiglahuflaba [SEP]')
+(['tiquidajugac\n'], 'you meegized him\n', '[CLS] tiquidajugac [SEP]')
+(['axinquifibikaqueh\n'], 'you did not keefaflaxize him\n', '[CLS] axtiquifibikac [SEP]')
+(['quinmodah\n'], 'they lihokate them\n', '[CLS] quinkipah [SEP]')
+(['intechmoleegaqueh\n'], 'you jajakated us\n', '[CLS] titechmoflafrufac [SEP]')
+(['mitzflochomaqueh\n'], 'they froflubated you\n', '[CLS] mitzflochomaqueh [SEP]')
+(['tiquicuchanaqueh\n'], 'we gofated him\n', '[CLS] tiquilidaflogaqueh [SEP]')
+(['inquimoofatah\n'], 'you gobuchadate him\n', '[CLS] inquimoofatah [SEP]')
+(['mechmoochupaqueh\n'], 'they kukuxated you\n', '[CLS] mitzmoochufaqueh [SEP]')
+(['inmechdalolah\n'], 'you glubuxize you\n', '[CLS] timechdalola [SEP]')
+(['axnimechhuguba\n'], 'I do not dihamate you\n', '[CLS] axnimitzhubaba [SEP]')
+(['axmechdalola\n'], 'he does not glubuxize you\n', '[CLS] axmitzdalola [SEP]')
+(['inmechdochibaqueh\n'], 'you cokized you\n', '[CLS] timechmapa [SEP]')
+(['nimitzfriga\n'], 'I homofulate you\n', '[CLS] nimechgufrakuxa [SEP]')
+(['tinechfobac\n'], 'you meefridated me\n', '[CLS] tinechfobac [SEP]')
+(['titechglahuflaba\n'], 'you fridudate us\n', '[CLS] intechglahuflabah [SEP]')
+(['axtimitzfrijacac\n'], 'you did not lokate you\n', '[CLS] axinmitzkodafaqueh [SEP]')
+(['titechchoflakifah\n'], 'we duglulize us\n', '[CLS] titechchoflakifah [SEP]')
+(['inquinhucharah\n'], 'you bochotize them\n', '[CLS] tiquinhuchara [SEP]')
+(['techdifriraqueh\n'], 'they hogluhubized us\n', '[CLS] techcochakaqueh [SEP]')
+(['nechhukufaqueh\n'], 'they cogized me\n', '[CLS] nechhukufaqueh [SEP]')
+(['niquinfogacoda\n'], 'I kulate them\n', '[CLS] niquinfogacoda [SEP]')
+(['nechlagaka\n'], 'he gojucates me\n', '[CLS] nechlagaka [SEP]')
+(['quijimigarah\n'], 'they herate him\n', '[CLS] quijimigarah [SEP]')
+(['tiquinfropac\n'], 'you juflulopated them\n', '[CLS] tiquinlifritac [SEP]')
+(['titechbochopac\n'], 'you gakagated us\n', '[CLS] titechglulafac [SEP]')
+(['mitzjulafrika\n'], 'he lojucizes you\n', '[CLS] mechjulafrika [SEP]')
+(['tiquinbagoxah\n'], 'we dilabate them\n', '[CLS] tiquinbagoxah [SEP]')
+(['axtimechhucufoca\n'], 'you do not labifroxate you\n', '[CLS] axinmechfraglubah [SEP]')
+(['quinjama\n'], 'he hudifates them\n', '[CLS] quinjama [SEP]')
+(['timitzglukeecaqueh\n'], 'we hihonized you\n', '[CLS] timitzglukeecaqueh [SEP]')
+(['mechkuchugah\n'], 'they fajorate you\n', '[CLS] mechkuchugafah [SEP]')
+(['tinechlomogah\n'], 'we glojaflupize me\n', '[CLS] tinechlomogah [SEP]')
+(['nechdifriraqueh\n'], 'they hogluhubized me\n', '[CLS] nechdifuraqueh [SEP]')
+(['tinechjokixac\n'], 'you dakated me\n', '[CLS] innechjokixaqueh [SEP]')
+(['techmofrochifa\n'], 'he leerizes us\n', '[CLS] techfripa [SEP]')
+(['niquimoodaga\n'], 'I cuglogate him\n', '[CLS] niquimoodaga [SEP]')
+(['intechflagluxaqueh\n'], 'you jogochucated us\n', '[CLS] titechflagluxac [SEP]')
+(['axmechdofrukeexac\n'], 'he did not bofate you\n', '[CLS] axmitzdofrukeexac [SEP]')
+(['tiquigufac\n'], 'you frufricated him\n', '[CLS] inquigufaqueh [SEP]')
+(['axtiquimara\n'], 'you do not kudarate him\n', '[CLS] axinquimagokah [SEP]')
+(['timitzdokalubac\n'], 'you mookeebufated you\n', '[CLS] inmechdokalubaqueh [SEP]')
+(['tinechchimah\n'], 'we kaflojunate me\n', '[CLS] tinechfluhekah [SEP]')
+(['tinechhuflana\n'], 'you meeglumate me\n', '[CLS] innechhuflanah [SEP]')
+(['inmitzhafacah\n'], 'you higlapize you\n', '[CLS] inmitzhafacah [SEP]')
+(['inquinflimarah\n'], 'you fludagize them\n', '[CLS] inquinmahodah [SEP]')
+(['timechgafa\n'], 'you chochicate you\n', '[CLS] inmitzdaminah [SEP]')
+(['tiquinkichakaqueh\n'], 'we flofocopated them\n', '[CLS] tiquinlixaqueh [SEP]')
+(['tiquinjokixa\n'], 'you dakate them\n', '[CLS] tiquinjokixa [SEP]')
+(['nechmeebakadac\n'], 'he dichogized me\n', '[CLS] nechfubadac [SEP]')
+(['nechdihitac\n'], 'he frafutated me\n', '[CLS] nechjajumac [SEP]')
+(['axmitzbokaxaqueh\n'], 'they did not kodotate you\n', '[CLS] axmitzbokaxaqueh [SEP]')
+(['axinquingluxah\n'], 'you do not frubidate them\n', '[CLS] axinquinjaglumah [SEP]')
+(['mitzdifuraqueh\n'], 'they hofrubized you\n', '[CLS] mechdifuraqueh [SEP]')
+(['quinflobijilac\n'], 'he kidized them\n', '[CLS] quinflobijilac [SEP]')
+(['timitzgota\n'], 'you dofanize you\n', '[CLS] inmechgotah [SEP]')
+(['axquinlifoxac\n'], 'he did not chififize them\n', '[CLS] axquinlifoxac [SEP]')
+(['titechlonaqueh\n'], 'we keecated us\n', '[CLS] titechlonaqueh [SEP]')
+(['axtiquibahaka\n'], 'you do not fruhehudize him\n', '[CLS] axinquihoflifah [SEP]')
+(['inquinglolifaqueh\n'], 'you burated them\n', '[CLS] inquinlifrimaqueh [SEP]')
+(['axquilicac\n'], 'he did not fliladate him\n', '[CLS] axquilicac [SEP]')
+(['tinechhomirah\n'], 'we kojoleedate me\n', '[CLS] tinechhomidaqueh [SEP]')
+(['intechmeeflalaqueh\n'], 'you dikifated us\n', '[CLS] titechmeejolac [SEP]')
+(['timechjiglonac\n'], 'you flofrimalated you\n', '[CLS] timitzjiglonac [SEP]')
+(['tiquinfrajigac\n'], 'you floflumakated them\n', '[CLS] inquinfradaqueh [SEP]')
+(['axtiquingludacaqueh\n'], 'we did not mooglalate them\n', '[CLS] axtiquinlidagaqueh [SEP]')
+(['timechglamara\n'], 'you fagodate you\n', '[CLS] timechglamara [SEP]')
+(['titechflaleeta\n'], 'you kubifate us\n', '[CLS] titechflaleeta [SEP]')
+(['ninechfrahudikac\n'], 'I likuleetized me\n', '[CLS] ninechfrarac [SEP]')
+(['nitechflabilifac\n'], 'I flijabolated us\n', '[CLS] nitechflabilifac [SEP]')
+(['axquinlagakah\n'], 'they do not gojucate them\n', '[CLS] axquinlagakah [SEP]')
+(['mitzglamarac\n'], 'he fagodated you\n', '[CLS] mitzglamarac [SEP]')
+(['innechfodofrocaqueh\n'], 'you bucated me\n', '[CLS] tinechhahocopac [SEP]')
+(['tiquinleefomah\n'], 'we glakogize them\n', '[CLS] tiquinleefomah [SEP]')
+(['quichiglomaqueh\n'], 'they hojirated him\n', '[CLS] quichiflidaqueh [SEP]')
+(['titechfoba\n'], 'you meefridate us\n', '[CLS] titechfoba [SEP]')
+(['quinbina\n'], 'he befidates them\n', '[CLS] quinbina [SEP]')
+(['nitechfodudipa\n'], 'I bodulate us\n', '[CLS] nitechfodudipac [SEP]')
+(['niquincufaka\n'], 'I gugludate them\n', '[CLS] niquinlikarac [SEP]')
+(['nechfroflopa\n'], 'he macomates me\n', '[CLS] nechmagojipa [SEP]')
+(['mitzchilipah\n'], 'they kanate you\n', '[CLS] mechchilipah [SEP]')
+(['quimoleega\n'], 'he joflufipates him\n', '[CLS] quilupa [SEP]')
+(['inmechjumomeemaqueh\n'], 'you chilized you\n', '[CLS] inmechjumomeemaqueh [SEP]')
+(['axmechkafloxa\n'], 'he does not laflidize you\n', '[CLS] axmitzkagoka [SEP]')
+(['tiquibexaqueh\n'], 'we boluhufized him\n', '[CLS] tiquibexaqueh [SEP]')
+(['nechhulibac\n'], 'he frabaxated me\n', '[CLS] nechhulibaqueh [SEP]')
+Saving model ..

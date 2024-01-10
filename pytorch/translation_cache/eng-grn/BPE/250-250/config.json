@@ -1,0 +1,10 @@
+{
+    "DATA_DIR": "balls",
+    "SRC_LANGUAGE": "eng",
+    "TGT_LANGUAGE": "grn",
+    "NUM_EPOCHS": 50,
+    "SRC_VOCAB_SIZE": 250,
+    "TGT_VOCAB_SIZE": 250,
+    "ALGORITHM": "BPE",
+    "BPE_DROPOUT_RATE": 0.1
+}
