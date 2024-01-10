@@ -1,6 +1,7 @@
 import torch
 from typing import List
-from constants import DEVICE
+
+DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 def generate_square_subsequent_mask(sz):
     mask = (torch.triu(torch.ones((sz, sz), device=DEVICE)) == 1).transpose(0, 1)

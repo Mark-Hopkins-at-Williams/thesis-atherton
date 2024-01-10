@@ -2,7 +2,7 @@
     "DATA_DIR": "balls",
     "SRC_LANGUAGE": "eng",
     "TGT_LANGUAGE": "grn",
-    "NUM_EPOCHS": 30,
+    "NUM_EPOCHS": 50,
     "SRC_VOCAB_SIZE": 500,
     "TGT_VOCAB_SIZE": 500,
     "ALGORITHM": "UNIGRAM",

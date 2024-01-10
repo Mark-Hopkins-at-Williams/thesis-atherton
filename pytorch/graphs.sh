@@ -8,5 +8,4 @@
 #SBATCH --gres=gpu:1
 
 alias py=/home/hopkins/anaconda3/envs/mt/bin/python
-echo "dir: $1"
-py train.py $1
+py graphs.py

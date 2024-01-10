@@ -3,7 +3,6 @@ from pandas import DataFrame
 from tokenizers import Tokenizer, models, pre_tokenizers
 from tokenizers import trainers, processors, decoders
 from transformers import PreTrainedTokenizerFast
-from constants import ALGORITHM, VOCAB_SIZE, SRC_LANGUAGE, TGT_LANGUAGE, BPE_DROPOUT_RATE, DATA_DIR
 import os
 from tokenizers.pre_tokenizers import Whitespace
 
@@ -50,7 +49,7 @@ def create_hf_dataset(data_dir, src, tgt):
 def parallel_data_iterator(dataset, src, tgt, split="train"):
     return list(map(lambda x: (x[src], x[tgt]), dataset[split]['translation']))
 
-def train_tokenizer_with_algo():
+def train_tokenizer_with_algo(DATA_DIR, SRC_LANGUAGE, TGT_LANGUAGE, ALGORITHM, BPE_DROPOUT_RATE, VOCAB_SIZE):
     print(f"####Training tokenizer to go from {SRC_LANGUAGE} to {TGT_LANGUAGE}####")
     def get_training_corpus():
         for i in range(0, len(dataset['train'])):
